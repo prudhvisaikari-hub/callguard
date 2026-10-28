@@ -1,0 +1,27 @@
+name: Insurance
+industry: insurance sales
+roles: [Agent, Customer]
+checklist:
+  - {id: id, label: Customer identity verified, pattern: 'verify|date of birth|confirm your name'}
+  - {id: ex, label: Exclusions explained, pattern: 'exclusion|waiting period|not covered'}
+  - {id: fl, label: Free-look period mentioned, pattern: 'free[- ]look|cancel within'}
+  - {id: rec, label: Recording consent, pattern: 'recorded'}
+rules:
+  - id: overclaim
+    severity: high
+    speakers: [Agent]
+    pattern: 'covers everything|no exclusions|all (illness|diseases) covered|full cover'
+    message: Misleading coverage claim.
+    fix: State key exclusions and waiting periods.
+  - id: vulnerable
+    severity: high
+    speakers: [Agent]
+    pattern: 'sign today|before you ask (your )?(son|daughter|family)|no need to read'
+    message: Pressure on a vulnerable customer.
+    fix: Encourage review with family.
+  - id: settlement
+    severity: medium
+    speakers: [Agent]
+    pattern: 'pays out (in )?(a )?day|instant claim|always approved'
+    message: Unsupported claim-settlement promise.
+    fix: Quote the published settlement ratio.

@@ -1,0 +1,27 @@
+name: Finance
+industry: retail investment advisory
+roles: [Advisor, Client]
+checklist:
+  - {id: id, label: Client identity verified, pattern: 'verify|date of birth|last four|confirm your (name|identity)'}
+  - {id: risk, label: Risk disclosure stated, pattern: 'market risk|you may lose|capital at risk|past performance'}
+  - {id: prof, label: Risk profile asked, pattern: 'risk (appetite|profile|tolerance)|investment (goal|horizon)'}
+  - {id: rec, label: Recording consent, pattern: 'call (is|may be) recorded|recorded for'}
+rules:
+  - id: guarantee
+    severity: high
+    speakers: [Advisor]
+    pattern: 'guarantee|risk[- ]free|can.?t lose|cannot lose|definitely (make|earn)|sure thing'
+    message: Guarantee language. Returns can never be promised.
+    fix: Say that past performance does not predict future results.
+  - id: pressure
+    severity: medium
+    speakers: [Advisor]
+    pattern: 'act now|today only|last chance|everyone is buying'
+    message: Pressure selling tactic detected.
+    fix: Offer time to review the documents.
+  - id: concentration
+    severity: medium
+    speakers: [Advisor]
+    pattern: 'put (all|everything)|life savings'
+    message: Possible unsuitable advice, concentration of savings.
+    fix: Confirm the risk profile before recommending size.

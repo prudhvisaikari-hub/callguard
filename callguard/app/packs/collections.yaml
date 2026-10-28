@@ -1,0 +1,27 @@
+name: Debt collection
+industry: debt collection
+roles: [Agent, Debtor]
+checklist:
+  - {id: id, label: Right-party identity verified, pattern: 'verify|confirm you are|speaking with'}
+  - {id: mm, label: Debt-collector notice stated, pattern: 'attempt to collect a debt|debt collector'}
+  - {id: val, label: Validation and dispute rights told, pattern: 'dispute|validation|in writing'}
+  - {id: plan, label: Payment options offered, pattern: 'payment plan|installment|options'}
+rules:
+  - id: threat
+    severity: high
+    speakers: [Agent]
+    pattern: '(?:send|come to) (?:your|the) (?:home|house|office)|arrest|jail|police|ruin your|tell your (?:boss|family|neighbou?rs)'
+    message: Threat or third-party disclosure.
+    fix: Stay factual and offer a payment plan.
+  - id: abuse
+    severity: high
+    speakers: [Agent]
+    pattern: 'stupid|idiot|liar|lazy|worthless'
+    message: Abusive language.
+    fix: De-escalate and offer a supervisor.
+  - id: ultimatum
+    severity: medium
+    speakers: [Agent]
+    pattern: 'pay (right )?now or|last warning'
+    message: Coercive ultimatum.
+    fix: Present options, not ultimatums.

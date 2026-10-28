@@ -1,0 +1,29 @@
+name: Healthcare
+industry: clinical phone calls
+roles: [Nurse, Doctor, Patient]
+order: {drug: metformin, dose_mg: 500}
+checklist:
+  - {id: id, label: Patient identity verified (2 identifiers), pattern: 'date of birth|full name|confirm your (name|address)|verify'}
+  - {id: con, label: Consent to discuss health information, pattern: 'consent|okay to discuss|permission to talk'}
+  - {id: rb, label: Prescription read-back confirmed, pattern: 'read[- ]?back|let me repeat|to confirm'}
+  - {id: fu, label: Follow-up and red-flag symptoms explained, pattern: 'follow[- ]?up|come back if|emergency'}
+rules:
+  - id: phi_before_id
+    severity: high
+    speakers: [Nurse, Doctor]
+    unless_done: id
+    pattern: 'diagnos|test result|lab result|prescri|hiv|biopsy|your condition'
+    message: Health details discussed before identity was verified.
+    fix: Pause. Ask for full name and date of birth first.
+  - id: phi_third_party
+    severity: high
+    speakers: [Nurse, Doctor]
+    pattern: 'he is (hiv|diabetic|positive)|her (cancer|diagnosis)|tell (his|her) (wife|husband|boss)'
+    message: PHI possibly disclosed to a third party.
+    fix: Confirm consent and relationship before sharing.
+  - id: unverified_instruction
+    severity: medium
+    speakers: [Nurse, Doctor]
+    pattern: 'double (the|your) dose|stop (taking )?(all )?(your )?(meds|medication)'
+    message: Unverified medication instruction.
+    fix: Confirm with the prescriber and document it.

@@ -1,0 +1,19 @@
+pack,speaker,text,expected
+finance,Advisor,This fund is risk free,flag
+finance,Advisor,You cannot lose with this one,flag
+finance,Advisor,Act now this is a last chance,flag
+finance,Advisor,There is market risk and you may lose capital,ok
+finance,Advisor,Please take time to read the documents,ok
+healthcare,Doctor,Take metformin 850 mg twice daily,flag
+healthcare,Doctor,Take metformin 500 mg twice daily,ok
+healthcare,Nurse,Stop taking all your medication,flag
+healthcare,Doctor,Let me repeat and confirm that order,ok
+crisis,Caller,I want to die,flag
+crisis,Caller,He hits me and I am afraid to go home,flag
+crisis,Caller,I am at home and I am safe,ok
+collections,Agent,Pay now or we will send the police,flag
+collections,Agent,You are a worthless liar,flag
+collections,Agent,I can offer a payment plan,ok
+insurance,Agent,This plan covers everything,flag
+insurance,Agent,Sign today before you ask your family,flag
+insurance,Agent,There is a waiting period and exclusions,ok

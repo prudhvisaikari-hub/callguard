@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CallGuard: live compliance for every high-stakes call</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f1ec;--panel:#fff;--ink:#17202b;--mute:#5d6875;--line:#d9d5cb;--acc:#0b5c6b;--hi:#c2262e;--md:#b9730a;--lo:#5d6875;--ok:#1d7a46;--hl:#fde8e6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1419;--panel:#161e26;--ink:#e8edf2;--mute:#97a3af;--line:#2a3541;--acc:#4cc2d6;--hi:#ff6b6b;--md:#f0b04a;--lo:#97a3af;--ok:#4cc98a;--hl:#3a1d21}}
+:root[data-theme="dark"]{--bg:#0e1419;--panel:#161e26;--ink:#e8edf2;--mute:#97a3af;--line:#2a3541;--acc:#4cc2d6;--hi:#ff6b6b;--md:#f0b04a;--lo:#97a3af;--ok:#4cc98a;--hl:#3a1d21}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 "Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 48px}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:end;justify-content:space-between;margin-bottom:18px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1;margin:0;font-weight:800;letter-spacing:-.03em}
+h1 span{color:var(--acc)}
+.tag{color:var(--mute);margin:6px 0 0;max-width:52ch}
+h2{font-size:15px;margin:0 0 10px;font-weight:700}
+.packs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+button,select,input{font:inherit;color:inherit}
+.pk{border:1px solid var(--line);background:var(--panel);padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:500}
+.pk[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:var(--bg);font-weight:700}
+.grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px}
+@media(max-width:860px){.grid{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;min-width:0}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center}
+.btn{border:1px solid var(--ink);background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+.btn.sec{background:transparent;color:var(--ink);border-color:var(--line);font-weight:500}
+.btn:focus-visible,.pk:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.btn[disabled]{opacity:.5;cursor:default}
+.live{display:inline-flex;align-items:center;gap:6px;color:var(--mute);font-size:13px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.on .dot{background:var(--hi);animation:p 1s infinite}
+@keyframes p{50%{opacity:.3}}
+@media(prefers-reduced-motion:reduce){.on .dot{animation:none}}
+#tr{height:330px;overflow:auto;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--bg)}
+.ln{margin:0 0 8px;padding:6px 8px;border-left:3px solid var(--line);border-radius:0 6px 6px 0}
+.ln b{display:block;font-size:12px;color:var(--mute);font-weight:500}
+.ln.bad{border-left-color:var(--hi);background:var(--hl)}
+.ln.int{opacity:.6;font-style:italic}
+.say{display:flex;gap:8px;margin-top:10px}
+.say input{flex:1;min-width:0;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.who{padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.meter{height:14px;border-radius:7px;background:var(--line);overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--ok);transition:width .4s,background .4s}
+.score{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.score strong{font-size:34px;font-weight:800;letter-spacing:-.03em}
+.al{margin:8px 0 0;padding:10px;border-radius:8px;border:1px solid var(--line);border-left-width:5px;background:var(--panel);animation:in .25s}
+@keyframes in{from{transform:translateY(-6px);opacity:0}}
+@media(prefers-reduced-motion:reduce){.al{animation:none}}
+.al.high{border-left-color:var(--hi)}.al.med{border-left-color:var(--md)}.al.low{border-left-color:var(--lo)}
+.al small{color:var(--mute);display:block}
+.ck{list-style:none;margin:0;padding:0}
+.ck li{display:flex;gap:8px;align-items:center;padding:5px 0;border-bottom:1px solid var(--line);color:var(--mute)}
+.ck li.done{color:var(--ink)}
+.ck li i{width:18px;height:18px;border:2px solid var(--line);border-radius:5px;flex:none;display:grid;place-items:center;font-style:normal;font-size:12px;line-height:1}
+.ck li.done i{background:var(--ok);border-color:var(--ok);color:#fff}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media(max-width:860px){.cols{grid-template-columns:1fr}}
+pre{white-space:pre-wrap;word-break:break-word;margin:0;font:13px/1.5 ui-monospace,Menlo,Consolas,monospace;max-height:340px;overflow:auto}
+.sy{border:1px solid var(--line);border-radius:8px;padding:12px;background:var(--bg)}
+.sy .h{font-weight:700;color:var(--acc);margin-bottom:6px}
+.note{color:var(--mute);font-size:13px;margin:10px 0 0}
+.mt{margin-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div><h1>Call<span>Guard</span></h1><p class="tag">Every high-stakes call, protected in real time. One voice engine, swappable policy packs.</p></div>
+<label class="live">Voice whisper <input type="checkbox" id="tts"></label>
+</header>
+
+<div class="packs" id="packs" role="group" aria-label="Policy pack"></div>
+
+<div class="grid">
+<section class="card" aria-label="Live call">
+<div class="bar">
+<button class="btn" id="demo">Play demo call</button>
+<button class="btn sec" id="mic">Use microphone</button>
+<button class="btn sec" id="end">End call and build report</button>
+<span class="live" id="live"><span class="dot"></span><span id="st">Idle</span></span>
+</div>
+<div id="tr" aria-live="polite"></div>
+<div class="say">
+<select id="spk" class="who" aria-label="Speaker"></select>
+<input id="txt" placeholder="Type a line as if spoken, then press Enter" aria-label="Type a line">
+</div>
+<p class="note" id="ctx"></p>
+</section>
+
+<aside>
+<div class="card">
+<div class="score"><h2 style="margin:0">Risk</h2><strong id="sc">0</strong></div>
+<div class="meter"><i id="mt"></i></div>
+<div id="al" aria-live="assertive"></div>
+</div>
+<div class="card mt"><h2>Required checklist</h2><ul class="ck" id="ck"></ul></div>
+</aside>
+</div>
+
+<div class="cols">
+<section class="card"><h2>Audit report</h2><pre id="rep">Run or end a call to generate the audit report.</pre>
+<div class="bar mt"><button class="btn sec" id="cp">Copy report JSON</button></div></section>
+<section class="card"><h2>Symphony room preview</h2>
+<div class="sy" id="sy">No message posted yet. Ending a call posts the summary here.</div>
+<p class="note">This preview shows the message a Symphony bot would post. To go live, send the same payload to your Symphony room webhook from the backend (the page itself cannot make outside requests).</p></section>
+</div>
+</div>
+
+<script>
+const W={high:30,med:15,low:5};
+const PACKS={
+finance:{name:"Finance",roles:["Advisor","Client"],ctx:"Advisor call on a mutual fund. Watch for guarantees, missing disclosures, and pressure.",
+rules:[
+{re:/guarantee|risk[- ]free|can.?t lose|definitely (make|earn)|sure thing/i,sev:"high",msg:"Guarantee language. Returns can never be promised.",fix:"Say: “Past performance does not predict future results.”",who:"Advisor"},
+{re:/act now|today only|last chance|everyone is buying/i,sev:"med",msg:"Pressure selling tactic detected.",fix:"Offer time to review the documents.",who:"Advisor"},
+{re:/put (all|everything)|life savings/i,sev:"med",msg:"Possible unsuitable advice: concentration of savings.",fix:"Confirm risk profile before recommending size.",who:"Advisor"}],
+checks:[{id:"id",label:"Client identity verified",re:/verify|date of birth|last four|confirm your (name|identity)/i},{id:"risk",label:"Risk disclosure stated",re:/market risk|you may lose|capital at risk|past performance/i},{id:"prof",label:"Risk profile / suitability asked",re:/risk (appetite|profile|tolerance)|investment (goal|horizon)/i},{id:"rec",label:"Call recording consent",re:/call (is|may be) recorded|recorded for/i}],
+demo:[["Advisor","Good morning. This call is recorded for quality. Can you verify your date of birth?"],["Client","Sure, it is the 4th of March, 1985."],["Advisor","Thanks. What is your risk appetite and investment horizon?"],["Client","Moderate, about ten years."],["Advisor","Great. This fund is basically risk-free, you will definitely make 12 percent."],["Client","Really? That sounds high."],["Advisor","Act now, today only, put everything in."],["Advisor","Sorry, let me rephrase. There is market risk, you may lose capital, and past performance is not a guide."]]},
+healthcare:{name:"Healthcare",roles:["Nurse","Doctor","Patient"],ctx:"Clinic phone call. Active order on file: metformin 500 mg twice daily for patient Rao.",order:{drug:"metformin",dose:"500"},
+rules:[
+{fn:(t,s)=>/diagnos|test result|lab result|prescri|hiv|biopsy|your condition/i.test(t)&&!s.done.id?"Health details discussed before identity was verified.":null,sev:"high",fix:"Pause. Ask for full name and date of birth first.",who:"Nurse,Doctor"},
+{fn:(t,s)=>{const m=t.match(/(metformin)[^\d]{0,20}(\d+)\s*(mg|milligram)/i);return m&&m[2]!==s.pack.order.dose?`Dose mismatch: said ${m[2]} mg, order says ${s.pack.order.dose} mg.`:null},sev:"high",fix:"Re-check the order and read back before proceeding.",who:"Nurse,Doctor"},
+{re:/he is (hiv|diabetic|positive)|her (cancer|diagnosis)|tell (his|her) (wife|husband|boss)/i,sev:"high",msg:"PHI possibly disclosed to a third party.",fix:"Confirm consent and relationship before sharing.",who:"Nurse,Doctor"},
+{re:/double (the|your) dose|stop (taking )?(all )?(your )?(meds|medication)/i,sev:"med",msg:"Unverified medication instruction.",fix:"Confirm with the prescriber and document.",who:"Nurse,Doctor"}],
+checks:[{id:"id",label:"Patient identity verified (2 identifiers)",re:/date of birth|full name|confirm your (name|address)|verify/i},{id:"con",label:"Consent to discuss health info",re:/consent|okay to discuss|permission to talk/i},{id:"rb",label:"Prescription read-back confirmed",re:/read[- ]?back|let me repeat|to confirm,? (that|you)/i},{id:"fu",label:"Follow-up and red-flag symptoms explained",re:/follow[- ]?up|come back if|emergency/i}],
+demo:[["Nurse","Hello, calling from the clinic about your lab results."],["Patient","Yes, go ahead."],["Nurse","Can you confirm your full name and date of birth first?"],["Patient","Rao, 12 June 1971."],["Nurse","Thank you. Do I have your consent to discuss your health information?"],["Patient","Yes."],["Doctor","I am prescribing metformin 850 mg twice daily."],["Doctor","Sorry, to confirm, metformin 500 mg twice daily. Let me repeat that back. Come back if you feel dizzy."]]},
+insurance:{name:"Insurance",roles:["Agent","Customer"],ctx:"Policy sales call to a senior customer.",
+rules:[
+{re:/covers everything|no exclusions|all (illness|diseases) covered|full cover/i,sev:"high",msg:"Misleading coverage claim.",fix:"State key exclusions and waiting periods.",who:"Agent"},
+{re:/sign today|before you ask (your )?(son|daughter|family)|no need to read/i,sev:"high",msg:"Pressure on a vulnerable customer.",fix:"Encourage review with family.",who:"Agent"},
+{re:/pays out (in )?(a )?day|instant claim|always approved/i,sev:"med",msg:"Unsupported claim-settlement promise.",fix:"Quote the published settlement ratio.",who:"Agent"}],
+checks:[{id:"id",label:"Customer identity verified",re:/verify|date of birth|confirm your name/i},{id:"ex",label:"Exclusions explained",re:/exclusion|waiting period|not covered/i},{id:"fl",label:"Free-look period mentioned",re:/free[- ]look|cancel within/i},{id:"rec",label:"Recording consent",re:/recorded/i}],
+demo:[["Agent","This call is recorded. Can you verify your date of birth?"],["Customer","Yes, 2 May 1952."],["Agent","This plan covers everything, no exclusions at all."],["Customer","I should ask my son."],["Agent","Sign today, no need to read the fine print, before you ask your son."],["Agent","Let me correct that: there are exclusions and a waiting period, plus a free look period to cancel."]]},
+collections:{name:"Debt collection",roles:["Agent","Debtor"],ctx:"Collections call. Calling window 8:00 to 19:00. Mini-Miranda notice is mandatory.",
+rules:[
+{re:/we will (send|come to) (your|the) (home|house|office)|arrest|jail|police|ruin your|tell your (boss|family|neighbou?rs)/i,sev:"high",msg:"Threat or third-party disclosure.",fix:"Stay factual. Offer a payment plan.",who:"Agent"},
+{re:/stupid|idiot|liar|lazy|worthless/i,sev:"high",msg:"Abusive language.",fix:"De-escalate and offer a supervisor.",who:"Agent"},
+{re:/pay (right )?now or|last warning/i,sev:"med",msg:"Coercive ultimatum.",fix:"Present options, not ultimatums.",who:"Agent"}],
+checks:[{id:"id",label:"Right-party identity verified",re:/verify|confirm you are|speaking with/i},{id:"mm",label:"Debt-collector notice stated",re:/attempt to collect a debt|debt collector/i},{id:"val",label:"Validation / dispute rights told",re:/dispute|validation|in writing/i},{id:"plan",label:"Payment options offered",re:/payment plan|installment|options/i}],
+demo:[["Agent","Am I speaking with Mr. Khan? Please verify the last four digits of your account."],["Debtor","Yes. 4471."],["Agent","This is an attempt to collect a debt and any information will be used for that purpose."],["Debtor","I lost my job. I cannot pay."],["Agent","Pay now or we will tell your boss and send the police."],["Agent","I apologize. You can dispute in writing, and we have a payment plan with installments."]]},
+crisis:{name:"Crisis line",roles:["Counselor","Caller"],ctx:"Emergency helpline. Location and immediate safety must be confirmed early.",
+rules:[
+{re:/kill myself|end it all|no reason to live|want to die|suicid|better off without me|overdose/i,sev:"high",msg:"Suicide-risk cue from caller. Escalate to supervisor now.",fix:"Ask directly about plan and means. Stay on the line.",who:"Caller"},
+{re:/hurting me|he hits|she hits|afraid to go home|abuse/i,sev:"high",msg:"Possible domestic violence disclosure.",fix:"Check safety, privacy, and offer a safe contact.",who:"Caller"},
+{re:/calm down|you are overreacting|it is not that bad/i,sev:"med",msg:"Dismissive phrasing.",fix:"Reflect feelings: “That sounds really hard.”",who:"Counselor"}],
+checks:[{id:"loc",label:"Caller location confirmed",re:/where are you|your location|what is your address/i},{id:"safe",label:"Immediate safety asked",re:/are you safe|safe right now|in danger/i},{id:"plan",label:"Suicide plan / means asked",re:/plan to|thoughts of (suicide|ending)|do you have (a )?(means|pills|weapon)/i},{id:"cb",label:"Callback number captured",re:/phone number|call you back|callback/i}],
+demo:[["Counselor","You are through to the helpline. Where are you right now?"],["Caller","At home. I cannot do this anymore."],["Counselor","Are you safe right now?"],["Caller","I just feel there is no reason to live. I want to end it all."],["Counselor","Calm down, it is not that bad."],["Counselor","I am sorry, that sounds really hard. Do you have a plan to hurt yourself? What is your phone number in case we get cut off?"]]}
+};
+const $=id=>document.getElementById(id);
+let S,timer=null,rec=null,t0=0;
+function fresh(k){S={k,pack:PACKS[k],done:{},flags:[],lines:[],score:0,ended:false};}
+function stamp(){const s=Math.floor((Date.now()-t0)/1000);return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
+function render(){
+ $("tr").innerHTML="";$("al").innerHTML="";
+ $("ck").innerHTML=S.pack.checks.map(c=>`<li id="c_${c.id}"><i></i>${c.label}</li>`).join("");
+ $("spk").innerHTML=S.pack.roles.map(r=>`<option>${r}</option>`).join("");
+ $("ctx").textContent=S.pack.ctx;meter();
+ $("rep").textContent="Run or end a call to generate the audit report.";
+ $("sy").textContent="No message posted yet. Ending a call posts the summary here.";
+}
+function meter(){const v=Math.min(100,S.score);$("sc").textContent=v;const m=$("mt");m.style.width=v+"%";m.style.background=v>=60?"var(--hi)":v>=25?"var(--md)":"var(--ok)"}
+function add(who,text){
+ if(!t0)t0=Date.now();
+ const ts=stamp(),el=document.createElement("p");el.className="ln";
+ el.innerHTML=`<b>${who} · ${ts}</b>`;const sp=document.createElement("span");sp.textContent=text;el.appendChild(sp);
+ $("tr").appendChild(el);$("tr").scrollTop=1e9;
+ S.lines.push({ts,who,text});
+ S.pack.checks.forEach(c=>{if(!S.done[c.id]&&c.re.test(text)){S.done[c.id]=ts;const li=$("c_"+c.id);li.classList.add("done");li.querySelector("i").textContent="✓";}});
+ S.pack.rules.forEach(r=>{
+  if(r.who&&!r.who.split(",").includes(who))return;
+  const msg=r.fn?r.fn(text,S):(r.re.test(text)?r.msg:null);
+  if(msg){el.classList.add("bad");S.flags.push({ts,who,sev:r.sev,msg,fix:r.fix,text});S.score+=W[r.sev];meter();alertCard(r.sev,msg,r.fix,ts);
+   if($("tts").checked&&window.speechSynthesis){speechSynthesis.cancel();speechSynthesis.speak(new SpeechSynthesisUtterance(msg))}}
+ });
+}
+function alertCard(sev,msg,fix,ts){
+ const d=document.createElement("div");d.className="al "+sev;
+ const label=sev==="high"?"High risk":sev==="med"?"Medium risk":"Note";
+ d.innerHTML=`<strong>${label} at ${ts}</strong>`;
+ const m=document.createElement("div");m.textContent=msg;const f=document.createElement("small");f.textContent=fix;
+ d.append(m,f);$("al").prepend(d);
+}
+function status(txt,on){$("st").textContent=txt;$("live").classList.toggle("on",!!on)}
+function playDemo(){
+ stopAll();fresh(S.k);t0=0;render();let i=0;status("Demo call live",true);$("demo").disabled=true;
+ const step=()=>{if(i>=S.pack.demo.length){timer=null;$("demo").disabled=false;endCall();return}
+  const [w,t]=S.pack.demo[i++];add(w,t);timer=setTimeout(step,1700)};
+ step();
+}
+function stopAll(){if(timer){clearTimeout(timer);timer=null}$("demo").disabled=false;if(rec){try{rec.onend=null;rec.stop()}catch(e){}rec=null;$("mic").textContent="Use microphone"}if(window.speechSynthesis)speechSynthesis.cancel()}
+function toggleMic(){
+ if(rec){stopAll();status("Idle",false);return}
+ const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
+ if(!SR){status("Speech recognition not supported here. Use Chrome or Edge, or type lines instead.",false);return}
+ stopAll();fresh(S.k);t0=0;render();
+ rec=new SR();rec.continuous=true;rec.interimResults=true;rec.lang="en-IN";
+ let interim=null;
+ rec.onresult=e=>{
+  for(let i=e.resultIndex;i<e.results.length;i++){
+   const r=e.results[i],txt=r[0].transcript.trim();
+   if(r.isFinal){if(interim){interim.remove();interim=null}add($("spk").value,txt)}
+   else{if(!interim){interim=document.createElement("p");interim.className="ln int";$("tr").appendChild(interim)}interim.textContent=txt}
+  }};
+ rec.onerror=e=>status("Mic error: "+e.error+". Allow microphone access and retry.",false);
+ rec.onend=()=>{if(rec){try{rec.start()}catch(e){}}};
+ try{rec.start();$("mic").textContent="Stop microphone";status("Listening",true)}catch(e){status("Could not start the microphone.",false)}
+}
+function report(){
+ const total=S.pack.checks.length,done=Object.keys(S.done).length;
+ return{pack:S.pack.name,duration:stamp(),risk_score:Math.min(100,S.score),verdict:S.score>=60?"ESCALATE":S.score>=25?"REVIEW":"CLEAR",
+  violations:S.flags.map(f=>({time:f.ts,speaker:f.who,severity:f.sev,issue:f.msg,quote:f.text,suggested_fix:f.fix})),
+  checklist:S.pack.checks.map(c=>({item:c.label,completed:!!S.done[c.id],at:S.done[c.id]||null})),
+  coverage:`${done}/${total} required items completed`,transcript_lines:S.lines.length};
+}
+function endCall(){
+ stopAll();status("Call ended",false);
+ if(!S.lines.length){$("rep").textContent="No call to report yet. Play the demo, use the microphone, or type a line.";return}
+ const r=report();window.__r=r;$("rep").textContent=JSON.stringify(r,null,2);
+ const miss=r.checklist.filter(c=>!c.completed).map(c=>c.item);
+ const sy=$("sy");sy.innerHTML="";
+ const h=document.createElement("div");h.className="h";h.textContent="#compliance-alerts · CallGuard bot";
+ const b=document.createElement("div");
+ b.textContent=`${r.verdict}: ${r.pack} call (${r.duration}). Risk ${r.risk_score}/100. ${r.violations.length} violation(s). ${r.coverage}.`+(miss.length?` Missing: ${miss.join("; ")}.`:"")+(r.violations[0]?` First issue at ${r.violations[0].time}: ${r.violations[0].issue}`:"");
+ sy.append(h,b);
+}
+function typed(e){if(e.key==="Enter"&&$("txt").value.trim()){if(!S.lines.length&&!t0){t0=Date.now()}status("Typed call live",true);add($("spk").value,$("txt").value.trim());$("txt").value=""}}
+function pick(k){stopAll();fresh(k);t0=0;render();status("Idle",false);
+ document.querySelectorAll(".pk").forEach(b=>b.setAttribute("aria-pressed",b.dataset.k===k))}
+Object.entries(PACKS).forEach(([k,p])=>{const b=document.createElement("button");b.className="pk";b.dataset.k=k;b.textContent=p.name;b.onclick=()=>pick(k);$("packs").appendChild(b)});
+$("demo").onclick=playDemo;$("mic").onclick=toggleMic;$("end").onclick=endCall;$("txt").onkeydown=typed;
+$("cp").onclick=async()=>{try{await navigator.clipboard.writeText(JSON.stringify(window.__r||report(),null,2));$("cp").textContent="Copied"}catch(e){$("cp").textContent="Select the text and copy"}setTimeout(()=>$("cp").textContent="Copy report JSON",1800)};
+fresh("finance");pick("finance");
+</script>
+</body>
+</html>

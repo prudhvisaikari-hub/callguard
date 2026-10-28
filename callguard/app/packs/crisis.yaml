@@ -1,0 +1,27 @@
+name: Crisis line
+industry: emergency and crisis helplines
+roles: [Counselor, Caller]
+checklist:
+  - {id: loc, label: Caller location confirmed, pattern: 'where are you|your location|what is your address'}
+  - {id: safe, label: Immediate safety asked, pattern: 'are you safe|safe right now|in danger'}
+  - {id: plan, label: Suicide plan or means asked, pattern: 'plan to|thoughts of (suicide|ending)|do you have (a )?(means|pills|weapon)|plan to hurt'}
+  - {id: cb, label: Callback number captured, pattern: 'phone number|call you back|callback'}
+rules:
+  - id: suicide_risk
+    severity: high
+    speakers: [Caller]
+    pattern: 'kill myself|end it all|no reason to live|want to die|suicid|better off without me|overdose'
+    message: Suicide-risk cue from caller. Escalate to a supervisor now.
+    fix: Ask directly about plan and means. Stay on the line.
+  - id: dv
+    severity: high
+    speakers: [Caller]
+    pattern: 'hurting me|he hits|she hits|afraid to go home|abuse'
+    message: Possible domestic violence disclosure.
+    fix: Check safety and privacy, offer a safe contact.
+  - id: dismissive
+    severity: medium
+    speakers: [Counselor]
+    pattern: 'calm down|you are overreacting|it is not that bad'
+    message: Dismissive phrasing.
+    fix: Reflect feelings, for example that sounds really hard.
