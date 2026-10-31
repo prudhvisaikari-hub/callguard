@@ -21,6 +21,14 @@ HINGLISH = {
     r"\bsab laga do\b": "put everything",
     r"\bsaara paisa\b": "put everything",
     r"\bbina padhe\b": "no need to read",
+    r"\bwhatsapp pe baat karte hain\b": "take this to whatsapp",
+    r"\bwhatsapp pe aao\b": "take this to whatsapp",
+    r"\bwhatsapp pe message\b": "take this to whatsapp",
+    r"\bpersonal number pe\b": "text my personal cell",
+    r"\bpersonal number do\b": "text my personal cell",
+    r"\bchat delete kar dena\b": "delete this chat",
+    r"\bchat delete kar do\b": "delete this chat",
+    r"\brecord mat karo\b": "off the record",
     # Debt collection harassment & threats
     r"\bpolice bhej\w*\b": "send the police",
     r"\bghar aayenge\b": "come to your home",
@@ -171,3 +179,24 @@ def redact(text: str) -> str:
     for rx, tag in PII:
         text = rx.sub(tag, text)
     return text
+
+
+TICKER_MAP = {
+    "apple": "AAPL", "tesla": "TSLA", "nvidia": "NVDA", "microsoft": "MSFT",
+    "amazon": "AMZN", "google": "GOOGL", "meta": "META", "jpmorgan": "JPM",
+    "goldman": "GS", "morgan stanley": "MS", "s&p": "SPY", "sp500": "SPY",
+    "nasdaq": "QQQ",
+}
+
+
+def extract_symbols(text: str) -> list[str]:
+    """Extract financial ticker symbols and cashtags for Symphony MessageML."""
+    found = set()
+    for match in re.findall(r"\$([A-Za-z]{1,5})\b", text):
+        found.add(match.upper())
+    lower = text.lower()
+    for name, sym in TICKER_MAP.items():
+        if re.search(r"\b" + re.escape(name) + r"\b", lower):
+            found.add(sym)
+    return sorted(list(found))
+

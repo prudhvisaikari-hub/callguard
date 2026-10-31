@@ -91,3 +91,18 @@ async def test_crisis_dv_disclosure():
     assert any("domestic violence" in f.issue.lower() for f in s.flags)
     assert s.report()["verdict"] == "ESCALATE"
 
+
+async def test_finance_offchannel_detection():
+    s = await run("finance", [
+        ("Advisor", "Let us take this to WhatsApp, text my personal cell and delete this chat."),
+    ])
+    assert any("off-channel" in f.issue.lower() and f.severity == "high" for f in s.flags)
+
+
+async def test_finance_market_manipulation_detection():
+    s = await run("finance", [
+        ("Advisor", "Let us flash a fake order to spoof the market and pump and dump before the print."),
+    ])
+    assert any("manipulation" in f.issue.lower() and f.severity == "high" for f in s.flags)
+
+

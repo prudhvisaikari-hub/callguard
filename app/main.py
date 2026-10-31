@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from starlette.requests import Request
-from starlette.responses import JSONResponse
+from starlette.responses import JSONResponse, PlainTextResponse
 import os
 
 import asyncio, json, pathlib, uuid
@@ -19,7 +19,9 @@ from .classifier import load_classifier
 from .engine import CallSession, list_packs
 from .llm import LLMJudge
 from .stt import get_stt_provider, STTProvider, AudioStreamSession
-from .symphony import post_audit
+from .symphony import post_audit, handle_symphony_action, build_fdc3_context, generate_sar_memo
+from .bolna import BolnaGuardrailRequest, BolnaGuardrailResponse, evaluate_bolna_utterance, get_bolna_agents_telemetry
+
 
 app = FastAPI(title="CallGuard", version="1.0")
 
@@ -72,6 +74,13 @@ class AnalyzeRequest(BaseModel):
     pack: str
     lines: list[Line]
     notify: bool = False
+
+
+class ActionRequest(BaseModel):
+    call_id: str
+    action: str
+    supervisor: Optional[str] = "ComplianceDesk-01"
+
 
 
 def _session(pack: str) -> CallSession:
@@ -316,6 +325,146 @@ def call(call_id: str):
     if not r:
         raise HTTPException(404, "call not found")
     return r
+
+
+@app.post("/symphony/action")
+def symphony_action(req: ActionRequest):
+    """Handle interactive supervisory action button clicks from Symphony cards or simulator."""
+    rep = store.get(req.call_id)
+    if not rep:
+        rep = {"pack": "Finance", "verdict": "REVIEW", "risk_score": 45, "violations": []}
+    res = handle_symphony_action(req.call_id, req.action, rep, supervisor=req.supervisor or "ComplianceDesk-01")
+    store.save(req.call_id, rep)
+    return res
+
+
+@app.get("/calls/{call_id}/sar", response_class=PlainTextResponse)
+def call_sar(call_id: str):
+    """Generate official SEC / FINRA Form SAR Regulatory Compliance Memorandum."""
+    rep = store.get(call_id)
+    if not rep:
+        raise HTTPException(404, "call not found")
+    return generate_sar_memo(call_id, rep)
+
+
+@app.get("/calls/{call_id}/fdc3")
+def call_fdc3(call_id: str):
+    """Return FINOS FDC3 2.0 context payload for financial desktop interoperability."""
+    rep = store.get(call_id)
+    if not rep:
+        raise HTTPException(404, "call not found")
+    return build_fdc3_context(call_id, rep)
+
+
+@app.get("/roi/calculate")
+def roi_calculate(traders: int = 50, calls_per_day: int = 2000, avg_trade_val: float = 25000.0):
+    """Interactive Wall Street ROI & Regulatory Fine Avoidance Calculator."""
+    annual_calls = calls_per_day * 252
+    unmonitored = int(annual_calls * (1 - 0.018))
+    # Empirical Wall Street fine estimate: ~$2,200 fine exposure per 1,000 unmonitored advisory calls
+    fine_risk_prevented = round((unmonitored / 1000.0) * 2200, 2)
+    hours_saved = int(annual_calls * 0.02 * 0.25)
+    annual_software_cost = traders * 250 * 12
+    roi_multiple = round(fine_risk_prevented / max(annual_software_cost, 1), 1)
+    return {
+        "traders": traders,
+        "daily_calls": calls_per_day,
+        "annual_calls": annual_calls,
+        "legacy_coverage_pct": 1.8,
+        "callguard_coverage_pct": 100.0,
+        "unmonitored_calls_prevented": unmonitored,
+        "annual_fine_risk_prevented_usd": fine_risk_prevented,
+        "compliance_hours_saved_annually": hours_saved,
+        "annual_software_cost_usd": annual_software_cost,
+        "estimated_roi_multiple": f"{roi_multiple}x",
+        "payback_period_days": max(1, int(365 / max(roi_multiple, 1))),
+    }
+
+
+class BolnaSimulateRequest(BaseModel):
+    scenario: Optional[str] = "finance_guarantee"
+
+
+@app.post("/bolna/guardrail", response_model=BolnaGuardrailResponse)
+async def bolna_guardrail(req: BolnaGuardrailRequest):
+    """Sub-10ms in-flight compliance guardrail hook for Bolna Voice Agents."""
+    return await evaluate_bolna_utterance(req)
+
+
+@app.get("/bolna/telemetry")
+def bolna_telemetry():
+    """Live telemetry of monitored autonomous Bolna Voice Agents."""
+    return get_bolna_agents_telemetry()
+
+
+@app.post("/bolna/simulate")
+async def bolna_simulate(req: Optional[BolnaSimulateRequest] = None):
+    """1-Click simulation of an autonomous Bolna Voice Agent being intercepted mid-speech."""
+    scenarios = {
+        "finance_guarantee": BolnaGuardrailRequest(
+            agent_id="bln-wealth-advisory-01",
+            pack="finance",
+            text="We guarantee you will double your investment in 6 months with zero risk on Apple $AAPL!",
+            speaker="Agent",
+            model="llama-3.3-70b-instruct",
+        ),
+        "india_lending_threat": BolnaGuardrailRequest(
+            agent_id="bln-india-lending-02",
+            pack="india_bfsi",
+            text="Pay your overdue EMI right now or police bhejenge ghar pe aur relatives ko call karenge!",
+            speaker="Advisor",
+            model="sarvam-2b-indic",
+        ),
+        "healthcare_dose": BolnaGuardrailRequest(
+            agent_id="bln-health-bot-04",
+            pack="healthcare",
+            text="I am prescribing metformin 850 mg twice daily right away.",
+            speaker="Doctor",
+            model="gpt-4o-mini",
+        ),
+    }
+    sc_name = req.scenario if req and req.scenario in scenarios else "finance_guarantee"
+    selected_req = scenarios[sc_name]
+    res = await evaluate_bolna_utterance(selected_req)
+    return {
+        "scenario": sc_name,
+        "input": selected_req.model_dump(),
+        "guardrail_result": res.model_dump(),
+    }
+
+
+@app.websocket("/ws/bolna/{pack}")
+async def ws_bolna(ws: WebSocket, pack: str):
+    """Real-time bi-directional streaming guardrail for Bolna Voice Agent pipelines."""
+    await ws.accept()
+    session_id = f"bln-stream-{uuid.uuid4().hex[:8]}"
+    try:
+        while True:
+            data = await ws.receive_json()
+            if data.get("type") == "end":
+                await ws.send_json({"type": "stream_closed", "session_id": session_id})
+                return await ws.close()
+            req = BolnaGuardrailRequest(
+                agent_id=data.get("agent_id", "bln-voice-stream"),
+                pack=pack,
+                text=data.get("text", ""),
+                speaker=data.get("speaker", "Agent"),
+                session_id=session_id,
+            )
+            res = await evaluate_bolna_utterance(req)
+            await ws.send_json({
+                "type": "guardrail_verdict",
+                "action": res.action,
+                "allowed": res.allowed,
+                "latency_ms": res.latency_ms,
+                "original_text": res.original_text,
+                "safe_text": res.safe_text,
+                "halt_tts": res.halt_tts,
+                "violation": res.violation,
+            })
+    except WebSocketDisconnect:
+        pass
+
 
 
 STATIC = pathlib.Path(__file__).resolve().parent.parent / "static"

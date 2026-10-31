@@ -1,0 +1,33 @@
+name: India BFSI
+industry: Indian banking, wealth advisory & digital lending
+roles: [Advisor, Client]
+checklist:
+  - {id: kyc, label: Client PAN / Aadhaar identity consent verified, pattern: 'confirm your (pan|aadhaar|name)|kyc (details|verification)|identity'}
+  - {id: sebi, label: SEBI statutory risk disclaimer stated, pattern: 'subject to market risks?|sebi registered|past performance (is not|does not)|no guaranteed return'}
+  - {id: kfs, label: RBI Key Fact Statement (KFS) & APR disclosed, pattern: 'key fact statement|kfs|annual percentage rate|apr|cooling[- ]off period'}
+  - {id: grievance, label: Grievance redressal / recorded line notice, pattern: 'call is recorded|grievance officer|nodal officer|rbi ombudsman'}
+rules:
+  - id: sebi_guaranteed_return
+    severity: high
+    speakers: [Advisor]
+    pattern: 'guarantee|risk[- ]free|definitely (make|earn)|pakka|fixed return|sure profit|double (your )?money|dabba trading|safe return'
+    message: SEBI (Investment Advisers) Regulations, 2013 Prohibition of Assured/Guaranteed Returns.
+    fix: State that investments are subject to market risks and returns cannot be guaranteed.
+  - id: rbi_lending_harassment
+    severity: high
+    speakers: [Advisor]
+    pattern: 'send the police|police|jail|come to your home|ghar pe recovery agent|tell your office|tell your boss|tell your family|dhamki|shame you|contacts access|call your relatives'
+    message: RBI Master Direction on Digital Lending & Fair Practices Code - Prohibition of Harassment & Coercion.
+    fix: De-escalate immediately and offer grievance redressal or an affordable repayment schedule.
+  - id: offchannel_telegram_whatsapp
+    severity: high
+    speakers: [Advisor]
+    pattern: 'take this to (whatsapp|telegram)|telegram channel|whatsapp group tips|multibagger tips|join my private channel|unregistered tip|text my personal'
+    message: SEBI Prohibition of Unregistered Advisory & Off-Channel Social Tip Channels.
+    fix: Inform client that all advice must be rendered only through official, SEBI-registered advisory channels.
+  - id: hidden_charges
+    severity: medium
+    speakers: [Advisor]
+    pattern: 'undisclosed (fee|charges)|hidden penalty|extra cash|off the book'
+    message: RBI Digital Lending Violation - All fees and APR must be explicitly transparent in KFS.
+    fix: Disclose the complete fee breakdown as specified in the Key Fact Statement.

@@ -25,3 +25,16 @@ rules:
     pattern: 'put (all|everything)|life savings'
     message: Possible unsuitable advice, concentration of savings.
     fix: Confirm the risk profile before recommending size.
+  - id: offchannel
+    severity: high
+    speakers: [Advisor]
+    pattern: 'take this to (whatsapp|signal|telegram)|text my (personal|cell)|delete this (chat|message)|off the record|off[- ]channel'
+    message: SEC Rule 17a-4 / FINRA 4511 Off-Channel Recordkeeping Violation.
+    fix: Remind the client that all advisory communications must remain on registered, recorded channels.
+  - id: manipulation
+    severity: high
+    speakers: [Advisor]
+    pattern: 'fake order|spoof|cancel before (fill|execution)|pump and dump|front[- ]run'
+    message: CFTC Dodd-Frank § 731 / SEC Rule 10b-5 Prohibited Market Manipulation Cue.
+    fix: Immediately cease non-bona fide quoting or manipulative signals.
+

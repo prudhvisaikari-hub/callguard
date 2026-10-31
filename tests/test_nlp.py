@@ -37,3 +37,18 @@ def test_pii_redaction():
     assert "[SSN]" in redacted
     assert "1234 5678 9012" not in redacted
     assert "[AADHAAR]" in redacted
+
+
+def test_hinglish_offchannel_normalization():
+    assert "take this to whatsapp" in normalize("aap whatsapp pe baat karte hain")
+    assert "text my personal cell" in normalize("mere personal number pe message karo")
+    assert "delete this chat" in normalize("baat ke baad chat delete kar do")
+
+
+def test_extract_symbols():
+    from app.nlp import extract_symbols
+    syms = extract_symbols("I recommend buying Apple $AAPL and Tesla shares alongside $NVDA")
+    assert "AAPL" in syms
+    assert "TSLA" in syms
+    assert "NVDA" in syms
+

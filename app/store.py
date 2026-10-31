@@ -26,3 +26,16 @@ def recent(limit: int = 20):
     with _conn() as c:
         rows = c.execute("SELECT id, created, pack, verdict FROM calls ORDER BY created DESC LIMIT ?", (limit,)).fetchall()
     return [{"id": r[0], "created": r[1], "pack": r[2], "verdict": r[3]} for r in rows]
+
+
+def record_action(call_id: str, action_item: dict) -> dict:
+    """Record a supervisory action taken on a call."""
+    rep = get(call_id)
+    if not rep:
+        rep = {"pack": "finance", "verdict": "REVIEW", "risk_score": 50, "violations": []}
+    if "actions" not in rep:
+        rep["actions"] = []
+    rep["actions"].append(action_item)
+    save(call_id, rep)
+    return rep
+
