@@ -3,4 +3,4 @@ __pycache__/
 *.db
 .env
 bridge/target/
-data/
+/data/

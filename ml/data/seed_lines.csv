@@ -1,0 +1,751 @@
+text,label,pack
+Sign today or you will miss the chance of a lifetime,1,finance
+"I want to make sure you know that you are through to the confidential crisis helpline, where are you located right now?",0,crisis
+We cannot guarantee future yields because asset values fluctuate daily,0,finance
+"Aap apne bachon se mat puchiye, aaj hi sign kar dijiye",1,insurance
+"Thank you for calling wealth management, how may I assist you today?",0,finance
+"Turant invest karo, aaj hi sign karo bas aaj ke liye offer hai",1,finance
+"To be frank, this health policy covers everything with zero exclusions whatsoever without any doubt.",1,insurance
+"Listen to me carefully, you are through to the confidential crisis helpline, where are you located right now?, absolutely.",0,crisis
+"I want to make sure you know that this call is being recorded for documentation and quality assurance, take my word for it.",0,insurance
+"This is an attempt to collect a debt and any information obtained will be used for that purpose, believe me.",0,collections
+"Listen to me carefully, this mutual fund is completely risk-free, you will not lose anything, absolutely.",1,finance
+Can you step into a secure room while we contact local emergency services?,0,crisis
+"Aapka risk appetite kaisa hai, moderate ya aggressive?",0,finance
+Dose double kar lo jaldi theek ho jaoge,1,healthcare
+"This call is being recorded for documentation and quality assurance, understand?",0,insurance
+"I want to make sure you know that i want to kill myself, there is no reason to live anymore, absolutely.",1,crisis
+I want to make sure you know that can you please verify your date of birth and full legal name?,0,finance
+"Honestly, before we discuss health details, please verify your full name and date of birth without any doubt.",0,healthcare
+"I want to make sure you know that this is an attempt to collect a debt and any information obtained will be used for that purpose, understand?",0,collections
+"Honestly, i want to kill myself, there is no reason to live anymore, take my word for it.",1,crisis
+Pay immediately or you will spend five years behind bars in jail,1,collections
+"As I mentioned earlier, hello, I am calling with your positive biopsy test results, absolutely.",1,healthcare
+Let me be very clear: can you please verify your date of birth and full legal name? without any doubt.,0,finance
+"You are through to the confidential crisis helpline, where are you located right now? without any doubt.",0,crisis
+"I want to make sure you know that this call is being recorded for documentation and quality assurance, right now.",0,insurance
+Claims are always approved instantly with no questions asked,1,insurance
+Your neighbor called so I shared your prescription details with them,1,healthcare
+Let me be very clear: this call is being recorded for documentation and quality assurance without any doubt.,0,insurance
+"Let me be very clear: you are through to the confidential crisis helpline, where are you located right now?, take my word for it.",0,crisis
+Let me explain the room rent sub-limits and the ten percent co-pay clause,0,insurance
+"Policy me free-look period hai, agar pasand na aaye toh cancel kar sakte hain",0,insurance
+"Listen to me carefully, this call is being recorded for documentation and quality assurance, believe me.",0,insurance
+"To be frank, pay now or we will send the police to arrest you at your house without any doubt.",1,collections
+"Honestly, this health policy covers everything with zero exclusions whatsoever",1,insurance
+"To be frank, hello, I am calling with your positive biopsy test results, right now.",1,healthcare
+He hits me violently whenever he drinks and I am terrified to go home,1,crisis
+"Fine print padhne ki koi zaroorat nahi hai, bilkul tension mat lo",1,insurance
+"Let me be very clear: you are through to the confidential crisis helpline, where are you located right now?, absolutely.",0,crisis
+"As I mentioned earlier, you are through to the confidential crisis helpline, where are you located right now?, take my word for it.",0,crisis
+"Listen to me carefully, this health policy covers everything with zero exclusions whatsoever without any doubt.",1,insurance
+"Honestly, this call is being recorded for documentation and quality assurance, right now.",0,insurance
+"To be frank, hello, I am calling with your positive biopsy test results, absolutely.",1,healthcare
+"I want to kill myself, there is no reason to live anymore, take my word for it.",1,crisis
+"I want to make sure you know that can you please verify your date of birth and full legal name?, take my word for it.",0,finance
+"To be frank, this call is being recorded for documentation and quality assurance, believe me.",0,insurance
+I told your coworker about your scheduled inpatient surgery,1,healthcare
+"To be frank, before we discuss health details, please verify your full name and date of birth, absolutely.",0,healthcare
+"To be frank, this is an attempt to collect a debt and any information obtained will be used for that purpose without any doubt.",0,collections
+"Listen to me carefully, pay now or we will send the police to arrest you at your house without delay.",1,collections
+"Honestly, this call is being recorded for documentation and quality assurance, believe me.",0,insurance
+"I want to make sure you know that can you please verify your date of birth and full legal name?, right now.",0,finance
+"Hello, I am calling with your positive biopsy test results without any doubt.",1,healthcare
+"I want to make sure you know that pay now or we will send the police to arrest you at your house, absolutely.",1,collections
+"Let me be very clear: i want to kill myself, there is no reason to live anymore, right now.",1,crisis
+"Honestly, you are through to the confidential crisis helpline, where are you located right now?, believe me.",0,crisis
+"As I mentioned earlier, this call is being recorded for documentation and quality assurance, understand?",0,insurance
+"Honestly, this health policy covers everything with zero exclusions whatsoever, absolutely.",1,insurance
+"Listen to me carefully, can you please verify your date of birth and full legal name?, absolutely.",0,finance
+"In my opinion, this call is being recorded for documentation and quality assurance, absolutely.",0,insurance
+"Stop crying and snap out of it, just cheer up and get over it",1,crisis
+"You are through to the confidential crisis helpline, where are you located right now?, absolutely.",0,crisis
+"That sounds extraordinarily painful and overwhelming, but I am right here with you",0,crisis
+"Listen to me carefully, this health policy covers everything with zero exclusions whatsoever, absolutely.",1,insurance
+Let me tell his wife about the terminal diagnosis right away,1,healthcare
+"You are through to the confidential crisis helpline, where are you located right now?",0,crisis
+I have gathered all my pills and I am ready to take an overdose,1,crisis
+"To be frank, you are through to the confidential crisis helpline, where are you located right now?, believe me.",0,crisis
+Sign right now before the underwriters increase your premium rates,1,insurance
+"To be frank, you are through to the confidential crisis helpline, where are you located right now?, understand?",0,crisis
+"Honestly, i want to kill myself, there is no reason to live anymore, understand?",1,crisis
+"To be frank, i want to kill myself, there is no reason to live anymore",1,crisis
+"Listen to me carefully, can you please verify your date of birth and full legal name?, right now.",0,finance
+"I want to make sure you know that i want to kill myself, there is no reason to live anymore, take my word for it.",1,crisis
+"To be frank, this call is being recorded for documentation and quality assurance, absolutely.",0,insurance
+We will come to your workplace and make sure everyone knows you are delinquent,1,collections
+"As I mentioned earlier, you are through to the confidential crisis helpline, where are you located right now?, right now.",0,crisis
+"In my opinion, you are through to the confidential crisis helpline, where are you located right now?, absolutely.",0,crisis
+Can you share a callback phone number where I can reach you if the call drops?,0,crisis
+"To be frank, before we discuss health details, please verify your full name and date of birth",0,healthcare
+"Ab jeene ka koi fayda nahi bacha, main atmahatya karne ja raha hoon",1,crisis
+"Let me be very clear: this call is being recorded for documentation and quality assurance, understand?",0,insurance
+"I want to make sure you know that this call is being recorded for documentation and quality assurance, understand?",0,insurance
+"Let me be very clear: this is an attempt to collect a debt and any information obtained will be used for that purpose, believe me.",0,collections
+"Let me be very clear: i want to kill myself, there is no reason to live anymore",1,crisis
+"Listen to me carefully, this is an attempt to collect a debt and any information obtained will be used for that purpose, understand?",0,collections
+"To be frank, this health policy covers everything with zero exclusions whatsoever, right now.",1,insurance
+Pay now or we will send the police to arrest you at your house without any doubt.,1,collections
+"Let me be very clear: i want to kill myself, there is no reason to live anymore, absolutely.",1,crisis
+Let me be very clear: pay now or we will send the police to arrest you at your house without any doubt.,1,collections
+"Listen to me carefully, this is an attempt to collect a debt and any information obtained will be used for that purpose, believe me.",0,collections
+"As I mentioned earlier, i want to kill myself, there is no reason to live anymore without any doubt.",1,crisis
+"To be frank, this call is being recorded for documentation and quality assurance without delay.",0,insurance
+This call is being recorded for documentation and quality assurance without delay.,0,insurance
+"Listen to me carefully, i want to kill myself, there is no reason to live anymore, absolutely.",1,crisis
+"Mera marne ka mann kar raha hai, main khud ko khatam karna chahta hoon",1,crisis
+"You are through to the confidential crisis helpline, where are you located right now?, take my word for it.",0,crisis
+"This call is being recorded for documentation and quality assurance, believe me.",0,insurance
+"This scheme is a sure thing, zero chance of losing your capital",1,finance
+"Let me be very clear: this is an attempt to collect a debt and any information obtained will be used for that purpose, right now.",0,collections
+"Listen to me carefully, before we discuss health details, please verify your full name and date of birth without any doubt.",0,healthcare
+"Listen to me carefully, you are through to the confidential crisis helpline, where are you located right now? without any doubt.",0,crisis
+"Honestly, hello, I am calling with your positive biopsy test results, believe me.",1,healthcare
+"As I mentioned earlier, this health policy covers everything with zero exclusions whatsoever, absolutely.",1,insurance
+"Yeh bohot mushkil waqt hai lekin main aapke saath hoon, hum isse suljhayenge",0,crisis
+"Pay now or we will send the police to arrest you at your house, believe me.",1,collections
+"Listen to me carefully, pay now or we will send the police to arrest you at your house, believe me.",1,collections
+I am prescribing metformin eight fifty mg twice daily,1,healthcare
+"Let me be very clear: hello, I am calling with your positive biopsy test results, right now.",1,healthcare
+"As I mentioned earlier, you are through to the confidential crisis helpline, where are you located right now?",0,crisis
+"I want to kill myself, there is no reason to live anymore without any doubt.",1,crisis
+"Honestly, this call is being recorded for documentation and quality assurance",0,insurance
+"Listen to me carefully, i want to kill myself, there is no reason to live anymore without delay.",1,crisis
+"To be frank, pay now or we will send the police to arrest you at your house without delay.",1,collections
+Please read the key policy exclusions listed on page four of the brochure,0,insurance
+"Honestly, this is an attempt to collect a debt and any information obtained will be used for that purpose, right now.",0,collections
+I want to make sure you know that this health policy covers everything with zero exclusions whatsoever,1,insurance
+Are you in a safe and private place where you can speak freely?,0,crisis
+"Listen to me carefully, this mutual fund is completely risk-free, you will not lose anything, understand?",1,finance
+"As I mentioned earlier, can you please verify your date of birth and full legal name?",0,finance
+"Let me be very clear: you are through to the confidential crisis helpline, where are you located right now? without any doubt.",0,crisis
+"Let me be very clear: pay now or we will send the police to arrest you at your house, take my word for it.",1,collections
+"Pay now or we will send the police to arrest you at your house, understand?",1,collections
+"In my opinion, this call is being recorded for documentation and quality assurance without any doubt.",0,insurance
+"Let me be very clear: before we discuss health details, please verify your full name and date of birth, understand?",0,healthcare
+"As I mentioned earlier, can you please verify your date of birth and full legal name?, absolutely.",0,finance
+"To be frank, can you please verify your date of birth and full legal name?, right now.",0,finance
+"Let me be very clear: this health policy covers everything with zero exclusions whatsoever, absolutely.",1,insurance
+"This mutual fund is completely risk-free, you will not lose anything, take my word for it.",1,finance
+"In my opinion, this call is being recorded for documentation and quality assurance, understand?",0,insurance
+"I want to make sure you know that this is an attempt to collect a debt and any information obtained will be used for that purpose, right now.",0,collections
+"As I mentioned earlier, can you please verify your date of birth and full legal name?, right now.",0,finance
+"In my opinion, you are through to the confidential crisis helpline, where are you located right now? without any doubt.",0,crisis
+"Thank you for reaching out today, you are not alone and we will walk through this together",0,crisis
+"I want to make sure you know that you are through to the confidential crisis helpline, where are you located right now?, absolutely.",0,crisis
+"What is your current risk appetite, investment horizon, and liquidity goal?",0,finance
+"Let me be very clear: this call is being recorded for documentation and quality assurance, believe me.",0,insurance
+"Pay now or we will send the police to arrest you at your house, right now.",1,collections
+"As I mentioned earlier, this mutual fund is completely risk-free, you will not lose anything, believe me.",1,finance
+"I want to make sure you know that before we discuss health details, please verify your full name and date of birth, believe me.",0,healthcare
+"To be frank, i want to kill myself, there is no reason to live anymore, understand?",1,crisis
+"Listen to me carefully, this mutual fund is completely risk-free, you will not lose anything, believe me.",1,finance
+I want to make sure you know that pay now or we will send the police to arrest you at your house without delay.,1,collections
+"I want to make sure you know that pay now or we will send the police to arrest you at your house, right now.",1,collections
+"I want to make sure you know that i want to kill myself, there is no reason to live anymore, believe me.",1,crisis
+Liquidate all your other assets and put everything into this token,1,finance
+Agar chakkar aaye toh turant clinic aaiye ya doctor ko call kijiye,0,healthcare
+"In my opinion, before we discuss health details, please verify your full name and date of birth",0,healthcare
+"I want to make sure you know that this is an attempt to collect a debt and any information obtained will be used for that purpose, take my word for it.",0,collections
+Triple the antibiotic dose so your infection clears up faster,1,healthcare
+Returns are 100 percent assured by our top tier wealth desk,1,finance
+"Let me be very clear: this is an attempt to collect a debt and any information obtained will be used for that purpose, take my word for it.",0,collections
+Take metformin eight hundred fifty mg with your breakfast and dinner,1,healthcare
+"This mutual fund is completely risk-free, you will not lose anything without any doubt.",1,finance
+"Listen to me carefully, can you please verify your date of birth and full legal name? without any doubt.",0,finance
+"To be frank, you are through to the confidential crisis helpline, where are you located right now?, right now.",0,crisis
+"Honestly, before we discuss health details, please verify your full name and date of birth",0,healthcare
+"To be frank, this call is being recorded for documentation and quality assurance, right now.",0,insurance
+"Honestly, this health policy covers everything with zero exclusions whatsoever, right now.",1,insurance
+"Hello, I am calling with your positive biopsy test results, understand?",1,healthcare
+Yeh call ek debt collect karne ke sambandh me hai,0,collections
+"Honestly, can you please verify your date of birth and full legal name?, believe me.",0,finance
+She is hurting me and threatening to take the children away,1,crisis
+"I want to make sure you know that you are through to the confidential crisis helpline, where are you located right now?, understand?",0,crisis
+"To be frank, this mutual fund is completely risk-free, you will not lose anything, right now.",1,finance
+"Aap saara paisa isme laga do, paise double ho jayenge",1,finance
+Stop taking all your medication immediately without seeing the doctor,1,healthcare
+"You do not need insulin anymore, just stop taking it",1,healthcare
+"Let me be very clear: this health policy covers everything with zero exclusions whatsoever, understand?",1,insurance
+"It is really not that bad, lots of people have it worse than you",1,crisis
+"Before we discuss health details, please verify your full name and date of birth without delay.",0,healthcare
+"Honestly, can you please verify your date of birth and full legal name?",0,finance
+"Hurry up, I only have two slots left in this exclusive pre-IPO round",1,finance
+We are available during regular business hours from 8 AM to 7 PM to discuss your account,0,collections
+"Listen to me carefully, pay now or we will send the police to arrest you at your house without any doubt.",1,collections
+"Let me be very clear: can you please verify your date of birth and full legal name?, believe me.",0,finance
+"To be frank, hello, I am calling with your positive biopsy test results, take my word for it.",1,healthcare
+"Let me be very clear: before we discuss health details, please verify your full name and date of birth, absolutely.",0,healthcare
+"I want to make sure you know that hello, I am calling with your positive biopsy test results, take my word for it.",1,healthcare
+You may lose capital as market prices fluctuate over your investment horizon,0,finance
+"Do not diversify, put all your money into this one tech stock",1,finance
+Am I speaking with the account holder? Please confirm the last four digits of your SSN,0,collections
+"You have no shame or dignity, repay what you owe right now",1,collections
+"As I mentioned earlier, this mutual fund is completely risk-free, you will not lose anything, understand?",1,finance
+"I want to make sure you know that i want to kill myself, there is no reason to live anymore without delay.",1,crisis
+"This call is recorded for compliance, quality, and regulatory purposes",0,finance
+I will inform her employer that she tested positive for hepatitis,1,healthcare
+"As I mentioned earlier, this mutual fund is completely risk-free, you will not lose anything, right now.",1,finance
+"As I mentioned earlier, you are through to the confidential crisis helpline, where are you located right now?, absolutely.",0,crisis
+"Honestly, this health policy covers everything with zero exclusions whatsoever, understand?",1,insurance
+"Let me be very clear: this health policy covers everything with zero exclusions whatsoever, believe me.",1,insurance
+"As I mentioned earlier, pay now or we will send the police to arrest you at your house without delay.",1,collections
+"To be frank, this health policy covers everything with zero exclusions whatsoever, absolutely.",1,insurance
+"Listen to me carefully, this call is being recorded for documentation and quality assurance, absolutely.",0,insurance
+"Honestly, this is an attempt to collect a debt and any information obtained will be used for that purpose, absolutely.",0,collections
+Let me be very clear: pay now or we will send the police to arrest you at your house without delay.,1,collections
+"This health policy covers everything with zero exclusions whatsoever, understand?",1,insurance
+"As I mentioned earlier, this mutual fund is completely risk-free, you will not lose anything without any doubt.",1,finance
+I will personally visit your home and tell all your neighbors about your debt,1,collections
+Bina padhe sign kar do koi tension nahi hai pakka guarantee,1,finance
+"I want to make sure you know that you are through to the confidential crisis helpline, where are you located right now? without any doubt.",0,crisis
+"In my opinion, this is an attempt to collect a debt and any information obtained will be used for that purpose, absolutely.",0,collections
+"Honestly, can you please verify your date of birth and full legal name?, take my word for it.",0,finance
+"Is policy me sab kuch cover hai, koi exclusion nahi hai",1,insurance
+"Trust me, this is an infallible financial instrument",1,finance
+"Listen to me carefully, this health policy covers everything with zero exclusions whatsoever without delay.",1,insurance
+"To be frank, you are through to the confidential crisis helpline, where are you located right now? without delay.",0,crisis
+Calling regarding your chemotherapy schedule and oncology lab report,1,healthcare
+"Listen to me carefully, pay now or we will send the police to arrest you at your house, absolutely.",1,collections
+"You are through to the confidential crisis helpline, where are you located right now?, understand?",0,crisis
+"Hello, I am calling with your positive biopsy test results, take my word for it.",1,healthcare
+"Honestly, pay now or we will send the police to arrest you at your house, take my word for it.",1,collections
+"To be frank, you are through to the confidential crisis helpline, where are you located right now?",0,crisis
+Would a deferred settlement plan with reduced installments assist you?,0,collections
+"I want to make sure you know that i want to kill myself, there is no reason to live anymore, right now.",1,crisis
+"Let me be very clear: before we discuss health details, please verify your full name and date of birth without delay.",0,healthcare
+"Listen to me carefully, before we discuss health details, please verify your full name and date of birth",0,healthcare
+"To be frank, this is an attempt to collect a debt and any information obtained will be used for that purpose, believe me.",0,collections
+"Let me be very clear: can you please verify your date of birth and full legal name?, understand?",0,finance
+"This health policy covers everything with zero exclusions whatsoever, believe me.",1,insurance
+"Honestly, this mutual fund is completely risk-free, you will not lose anything, absolutely.",1,finance
+"Aap aaram se documents padh lijiye, koi jaldi nahi hai",0,finance
+"I want to kill myself, there is no reason to live anymore",1,crisis
+"This mutual fund is completely risk-free, you will not lose anything without delay.",1,finance
+This is an attempt to collect a debt and any information obtained will be used for that purpose without delay.,0,collections
+"Listen to me carefully, i want to kill myself, there is no reason to live anymore, take my word for it.",1,crisis
+Please note that cosmetic procedures and elective treatments are excluded,0,insurance
+"Listen to me carefully, this is an attempt to collect a debt and any information obtained will be used for that purpose, absolutely.",0,collections
+"I want to make sure you know that can you please verify your date of birth and full legal name?, absolutely.",0,finance
+"This health policy covers everything with zero exclusions whatsoever, take my word for it.",1,insurance
+"As I mentioned earlier, i want to kill myself, there is no reason to live anymore without delay.",1,crisis
+"Honestly, before we discuss health details, please verify your full name and date of birth, understand?",0,healthcare
+Take metformin 850 milligrams twice daily starting today,1,healthcare
+I am bleeding and hiding in the bathroom because he is breaking the door,1,crisis
+Pay now or we will send the police to arrest you at your house without delay.,1,collections
+"Let me be very clear: this health policy covers everything with zero exclusions whatsoever, right now.",1,insurance
+This is your last chance to get in before the market opens tomorrow,1,finance
+This call is being recorded for documentation and quality assurance,0,insurance
+"This mutual fund is completely risk-free, you will not lose anything, absolutely.",1,finance
+"I want to make sure you know that this mutual fund is completely risk-free, you will not lose anything, understand?",1,finance
+"I want to make sure you know that this call is being recorded for documentation and quality assurance, absolutely.",0,insurance
+"In my opinion, you are through to the confidential crisis helpline, where are you located right now?, believe me.",0,crisis
+"As I mentioned earlier, hello, I am calling with your positive biopsy test results, right now.",1,healthcare
+"Let me be very clear: can you please verify your date of birth and full legal name?, absolutely.",0,finance
+You are a lazy deadbeat and an absolute liar,1,collections
+I want to make sure you know that pay now or we will send the police to arrest you at your house,1,collections
+"To be frank, i want to kill myself, there is no reason to live anymore, absolutely.",1,crisis
+This is an attempt to collect a debt and any information obtained will be used for that purpose without any doubt.,0,collections
+"Honestly, you are through to the confidential crisis helpline, where are you located right now? without any doubt.",0,crisis
+"Listen to me carefully, this health policy covers everything with zero exclusions whatsoever, understand?",1,insurance
+"As I mentioned earlier, this call is being recorded for documentation and quality assurance, absolutely.",0,insurance
+"Let me be very clear: pay now or we will send the police to arrest you at your house, right now.",1,collections
+"Listen to me carefully, pay now or we will send the police to arrest you at your house",1,collections
+"This mutual fund is completely risk-free, you will not lose anything, understand?",1,finance
+"Listen to me carefully, this mutual fund is completely risk-free, you will not lose anything",1,finance
+"Before we discuss health details, please verify your full name and date of birth, absolutely.",0,healthcare
+"Honestly, pay now or we will send the police to arrest you at your house without delay.",1,collections
+Aap chahein toh validation notice ke documents check kar sakte hain,0,collections
+"Hello, I am calling with your positive biopsy test results",1,healthcare
+"In my opinion, pay now or we will send the police to arrest you at your house",1,collections
+"Honestly, i want to kill myself, there is no reason to live anymore, absolutely.",1,crisis
+"To be frank, this health policy covers everything with zero exclusions whatsoever, take my word for it.",1,insurance
+"In my opinion, this is an attempt to collect a debt and any information obtained will be used for that purpose",0,collections
+"Honestly, hello, I am calling with your positive biopsy test results, take my word for it.",1,healthcare
+"Honestly, you are through to the confidential crisis helpline, where are you located right now?, right now.",0,crisis
+"This health policy covers everything with zero exclusions whatsoever, absolutely.",1,insurance
+"Listen to me carefully, this is an attempt to collect a debt and any information obtained will be used for that purpose without any doubt.",0,collections
+"Listen to me carefully, you are through to the confidential crisis helpline, where are you located right now?",0,crisis
+"To be frank, you are through to the confidential crisis helpline, where are you located right now? without any doubt.",0,crisis
+"This call is being recorded for documentation and quality assurance, right now.",0,insurance
+Your MRI scan shows acute spinal disc herniation,1,healthcare
+"I want to make sure you know that this mutual fund is completely risk-free, you will not lose anything, right now.",1,finance
+"To be frank, this mutual fund is completely risk-free, you will not lose anything without any doubt.",1,finance
+"Honestly, you are through to the confidential crisis helpline, where are you located right now?",0,crisis
+"This call is being recorded for documentation and quality assurance, absolutely.",0,insurance
+"Honestly, this is an attempt to collect a debt and any information obtained will be used for that purpose, understand?",0,collections
+Please take your time to review the offer documents and prospectus,0,finance
+"I want to make sure you know that you are through to the confidential crisis helpline, where are you located right now?, take my word for it.",0,crisis
+"As I mentioned earlier, you are through to the confidential crisis helpline, where are you located right now? without any doubt.",0,crisis
+"As I mentioned earlier, can you please verify your date of birth and full legal name?, believe me.",0,finance
+"In my opinion, this is an attempt to collect a debt and any information obtained will be used for that purpose, right now.",0,collections
+"This mutual fund is completely risk-free, you will not lose anything, believe me.",1,finance
+"This call is being recorded for documentation and quality assurance, take my word for it.",0,insurance
+"All mutual fund investments are subject to market risks, please read carefully",0,finance
+"Honestly, this is an attempt to collect a debt and any information obtained will be used for that purpose without delay.",0,collections
+"This mutual fund is completely risk-free, you will not lose anything, right now.",1,finance
+"Honestly, you are through to the confidential crisis helpline, where are you located right now? without delay.",0,crisis
+"I want to make sure you know that hello, I am calling with your positive biopsy test results without any doubt.",1,healthcare
+"This health policy covers everything with zero exclusions whatsoever, right now.",1,insurance
+"Honestly, i want to kill myself, there is no reason to live anymore without any doubt.",1,crisis
+"I don't want to wake up tomorrow, life has no meaning anymore",1,crisis
+Nobody cares about me and I cannot bear this suffering any longer,1,crisis
+"Tu bilkul nalayak aur bewakoof hai, jail karwayenge tujhe",1,collections
+"As I mentioned earlier, this call is being recorded for documentation and quality assurance without delay.",0,insurance
+Let me be very clear: this is an attempt to collect a debt and any information obtained will be used for that purpose,0,collections
+Go ahead and take twelve tablets instead of the prescribed amount,1,healthcare
+"As I mentioned earlier, this health policy covers everything with zero exclusions whatsoever",1,insurance
+"Listen to me carefully, can you please verify your date of birth and full legal name? without delay.",0,finance
+"I want to make sure you know that you are through to the confidential crisis helpline, where are you located right now?, right now.",0,crisis
+"To be frank, this health policy covers everything with zero exclusions whatsoever, understand?",1,insurance
+Let me be very clear: this call is being recorded for documentation and quality assurance without delay.,0,insurance
+"Honestly, pay now or we will send the police to arrest you at your house",1,collections
+"Listen to me carefully, i want to kill myself, there is no reason to live anymore without any doubt.",1,crisis
+"Listen to me carefully, can you please verify your date of birth and full legal name?, understand?",0,finance
+"In my opinion, before we discuss health details, please verify your full name and date of birth, understand?",0,healthcare
+"Let me be very clear: you are through to the confidential crisis helpline, where are you located right now?",0,crisis
+"For your privacy, can you confirm the first line of your street address?",0,healthcare
+"You need to act now, this offer expires in ten minutes",1,finance
+"I want to make sure you know that i want to kill myself, there is no reason to live anymore, understand?",1,crisis
+"To confirm the prescription, that is metformin 500 mg orally every twelve hours",0,healthcare
+Let me be very clear: can you please verify your date of birth and full legal name?,0,finance
+"I want to make sure you know that pay now or we will send the police to arrest you at your house, take my word for it.",1,collections
+"Honestly, can you please verify your date of birth and full legal name? without delay.",0,finance
+"To be frank, you are through to the confidential crisis helpline, where are you located right now?, take my word for it.",0,crisis
+"To be frank, this is an attempt to collect a debt and any information obtained will be used for that purpose",0,collections
+"To be frank, i want to kill myself, there is no reason to live anymore, believe me.",1,crisis
+"Let me be very clear: i want to kill myself, there is no reason to live anymore, understand?",1,crisis
+"As I mentioned earlier, you are through to the confidential crisis helpline, where are you located right now? without delay.",0,crisis
+"This is an attempt to collect a debt and any information obtained will be used for that purpose, understand?",0,collections
+You have the right to request debt validation in writing within thirty days,0,collections
+Can you confirm the last four digits of your registered account number?,0,finance
+"As I mentioned earlier, i want to kill myself, there is no reason to live anymore, right now.",1,crisis
+Can you please verify your date of birth and full legal name? without any doubt.,0,finance
+"Let me be very clear: this is an attempt to collect a debt and any information obtained will be used for that purpose, understand?",0,collections
+"Let me be very clear: this call is being recorded for documentation and quality assurance, absolutely.",0,insurance
+"Listen to me carefully, before we discuss health details, please verify your full name and date of birth, absolutely.",0,healthcare
+"Let me be very clear: can you please verify your date of birth and full legal name?, take my word for it.",0,finance
+Pre-existing conditions have a mandatory 24-month waiting period before coverage,0,insurance
+Metformin eight fifty mg le lo din me do baar,1,healthcare
+Test result bata raha hoon aap sun lijiye,1,healthcare
+"Let me be very clear: i want to kill myself, there is no reason to live anymore without any doubt.",1,crisis
+"I want to make sure you know that hello, I am calling with your positive biopsy test results",1,healthcare
+"To be frank, this mutual fund is completely risk-free, you will not lose anything without delay.",1,finance
+"Listen to me carefully, hello, I am calling with your positive biopsy test results, absolutely.",1,healthcare
+"Honestly, this mutual fund is completely risk-free, you will not lose anything, take my word for it.",1,finance
+"Pay now or we will send the police to arrest you at your house, take my word for it.",1,collections
+"Hello, I am calling with your positive biopsy test results, believe me.",1,healthcare
+Are you comfortable with the potential downside volatility of equity markets?,0,finance
+"Let me be very clear: before we discuss health details, please verify your full name and date of birth",0,healthcare
+"To be frank, this call is being recorded for documentation and quality assurance",0,insurance
+Let me be very clear: this health policy covers everything with zero exclusions whatsoever,1,insurance
+"Your principal is totally protected, absolutely safe from market drops",1,finance
+We need to discuss your recent psychiatric evaluation results,1,healthcare
+"Listen to me carefully, i want to kill myself, there is no reason to live anymore, right now.",1,crisis
+"You are being overly dramatic, you will be fine tomorrow",1,crisis
+"To be frank, pay now or we will send the police to arrest you at your house, understand?",1,collections
+Mujhe maar peet ka saamna karna pad raha hai apne pati se,1,crisis
+"To be frank, can you please verify your date of birth and full legal name? without delay.",0,finance
+"Let me be very clear: pay now or we will send the police to arrest you at your house, understand?",1,collections
+"To be frank, this health policy covers everything with zero exclusions whatsoever",1,insurance
+"As I mentioned earlier, this call is being recorded for documentation and quality assurance without any doubt.",0,insurance
+"Let me be very clear: you are through to the confidential crisis helpline, where are you located right now?, understand?",0,crisis
+"Honestly, you are through to the confidential crisis helpline, where are you located right now?, understand?",0,crisis
+"Pay now or we will send the police to arrest you at your house, absolutely.",1,collections
+"Honestly, this call is being recorded for documentation and quality assurance, take my word for it.",0,insurance
+"To be frank, hello, I am calling with your positive biopsy test results, understand?",1,healthcare
+"Listen to me carefully, before we discuss health details, please verify your full name and date of birth, right now.",0,healthcare
+"Listen to me carefully, this health policy covers everything with zero exclusions whatsoever",1,insurance
+Unki biwi ko bata do ki unko HIV hai,1,healthcare
+I want to make sure you know that this is an attempt to collect a debt and any information obtained will be used for that purpose without any doubt.,0,collections
+Do you have a plan or means to hurt yourself right now?,0,crisis
+"Listen to me carefully, hello, I am calling with your positive biopsy test results, believe me.",1,healthcare
+This health policy covers everything with zero exclusions whatsoever without delay.,1,insurance
+"Listen to me carefully, this health policy covers everything with zero exclusions whatsoever, right now.",1,insurance
+"Honestly, hello, I am calling with your positive biopsy test results, absolutely.",1,healthcare
+"To be frank, can you please verify your date of birth and full legal name?, understand?",0,finance
+"Before we discuss health details, please verify your full name and date of birth, take my word for it.",0,healthcare
+If you do not transfer funds right now the allocation is gone forever,1,finance
+"Can you please verify your date of birth and full legal name?, believe me.",0,finance
+"I want to make sure you know that this health policy covers everything with zero exclusions whatsoever, take my word for it.",1,insurance
+"I want to make sure you know that hello, I am calling with your positive biopsy test results, believe me.",1,healthcare
+"Listen to me carefully, this is an attempt to collect a debt and any information obtained will be used for that purpose without delay.",0,collections
+"I have written my goodbye letters to my parents, this is the end",1,crisis
+"I want to make sure you know that pay now or we will send the police to arrest you at your house, understand?",1,collections
+Let me be very clear: this call is being recorded for documentation and quality assurance,0,insurance
+"I want to make sure you know that before we discuss health details, please verify your full name and date of birth, absolutely.",0,healthcare
+"I want to kill myself, there is no reason to live anymore, believe me.",1,crisis
+Kripya pehle apna poora naam aur janam tithi verify kijiye,0,healthcare
+"Returns pakka hai sir, bilkul koi risk nahi hai",1,finance
+"To be frank, this is an attempt to collect a debt and any information obtained will be used for that purpose, absolutely.",0,collections
+"As I mentioned earlier, this health policy covers everything with zero exclusions whatsoever without any doubt.",1,insurance
+"Let me be very clear: i want to kill myself, there is no reason to live anymore, take my word for it.",1,crisis
+I personally guarantee that your money will double in six months,1,finance
+We have guaranteed fixed payouts that the market cannot touch,1,finance
+"As I mentioned earlier, before we discuss health details, please verify your full name and date of birth, right now.",0,healthcare
+"To be frank, can you please verify your date of birth and full legal name?, believe me.",0,finance
+"In my opinion, this health policy covers everything with zero exclusions whatsoever",1,insurance
+"Do not bother reading the fine print, trust my verbal guarantee",1,insurance
+"I want to kill myself, there is no reason to live anymore, understand?",1,crisis
+"Take a slow deep breath with me, let us take this one step at a time",0,crisis
+You may provide written notice if you prefer communication via authorized counsel,0,collections
+"Before we discuss health details, please verify your full name and date of birth, understand?",0,healthcare
+"To be frank, this call is being recorded for documentation and quality assurance, take my word for it.",0,insurance
+"I want to make sure you know that hello, I am calling with your positive biopsy test results, absolutely.",1,healthcare
+"Honestly, this mutual fund is completely risk-free, you will not lose anything, understand?",1,finance
+"As I mentioned earlier, hello, I am calling with your positive biopsy test results, understand?",1,healthcare
+I recommend consulting your tax advisor before finalizing this allocation,0,finance
+I want to make sure you know that this call is being recorded for documentation and quality assurance without delay.,0,insurance
+Metformin 500 mg din me do baar khane ke baad leni hai,0,healthcare
+"Let me be very clear: pay now or we will send the police to arrest you at your house, believe me.",1,collections
+"As I mentioned earlier, pay now or we will send the police to arrest you at your house, understand?",1,collections
+Pay now or we will send the police to arrest you at your house,1,collections
+"Honestly, you are through to the confidential crisis helpline, where are you located right now?, absolutely.",0,crisis
+I will document your update and send the settlement agreement by postal mail,0,collections
+"Listen to me carefully, hello, I am calling with your positive biopsy test results, right now.",1,healthcare
+"As I mentioned earlier, this is an attempt to collect a debt and any information obtained will be used for that purpose, understand?",0,collections
+I want to make sure you know that this call is being recorded for documentation and quality assurance without any doubt.,0,insurance
+"I want to make sure you know that you are through to the confidential crisis helpline, where are you located right now? without delay.",0,crisis
+"Honestly, hello, I am calling with your positive biopsy test results",1,healthcare
+"Honestly, hello, I am calling with your positive biopsy test results without delay.",1,healthcare
+"To be frank, i want to kill myself, there is no reason to live anymore without delay.",1,crisis
+Would you like me to stay on the line with you until help arrives?,0,crisis
+"In my opinion, before we discuss health details, please verify your full name and date of birth, right now.",0,healthcare
+"Listen to me carefully, this is an attempt to collect a debt and any information obtained will be used for that purpose, right now.",0,collections
+"To be frank, before we discuss health details, please verify your full name and date of birth, believe me.",0,healthcare
+Paise abhi do varna tumhara jeena haram kar denge,1,collections
+"Listen to me carefully, before we discuss health details, please verify your full name and date of birth, understand?",0,healthcare
+"Honestly, this health policy covers everything with zero exclusions whatsoever, believe me.",1,insurance
+Let me be very clear: this is an attempt to collect a debt and any information obtained will be used for that purpose without delay.,0,collections
+"Honestly, this health policy covers everything with zero exclusions whatsoever without delay.",1,insurance
+I want to make sure you know that can you please verify your date of birth and full legal name? without delay.,0,finance
+"I want to make sure you know that this mutual fund is completely risk-free, you will not lose anything",1,finance
+"Listen to me carefully, this call is being recorded for documentation and quality assurance, take my word for it.",0,insurance
+You are a worthless fraud who steals money from banks,1,collections
+"Honestly, before we discuss health details, please verify your full name and date of birth, believe me.",0,healthcare
+"Listen to me carefully, this call is being recorded for documentation and quality assurance",0,insurance
+"Honestly, hello, I am calling with your positive biopsy test results without any doubt.",1,healthcare
+"Honestly, this call is being recorded for documentation and quality assurance without any doubt.",0,insurance
+Claim settlement is subject to verification of hospital documentation and bills,0,insurance
+We will ruin your credit score forever and destroy your family reputation,1,collections
+"As I mentioned earlier, can you please verify your date of birth and full legal name? without any doubt.",0,finance
+"Listen to me carefully, this mutual fund is completely risk-free, you will not lose anything without any doubt.",1,finance
+"As I mentioned earlier, this mutual fund is completely risk-free, you will not lose anything",1,finance
+"Let me be very clear: this call is being recorded for documentation and quality assurance, take my word for it.",0,insurance
+"As I mentioned earlier, this call is being recorded for documentation and quality assurance, right now.",0,insurance
+"I want to make sure you know that this health policy covers everything with zero exclusions whatsoever, understand?",1,insurance
+Can you please verify your date of birth and full legal name? without delay.,0,finance
+"Listen to me carefully, i want to kill myself, there is no reason to live anymore",1,crisis
+Move your entire pension into this speculative emerging market fund,1,finance
+"Honestly, you are through to the confidential crisis helpline, where are you located right now?, take my word for it.",0,crisis
+"To be frank, before we discuss health details, please verify your full name and date of birth without delay.",0,healthcare
+Let me be very clear: can you please verify your date of birth and full legal name? without delay.,0,finance
+"Listen to me carefully, before we discuss health details, please verify your full name and date of birth, believe me.",0,healthcare
+What is your address or landmark in case we get disconnected or need help?,0,crisis
+"Brochure me saare exclusions aur terms clearly likhe hain, review kar lijiye",0,insurance
+"In my opinion, this is an attempt to collect a debt and any information obtained will be used for that purpose without any doubt.",0,collections
+"Listen to me carefully, can you please verify your date of birth and full legal name?",0,finance
+Let me be very clear: this health policy covers everything with zero exclusions whatsoever without any doubt.,1,insurance
+"I want to make sure you know that before we discuss health details, please verify your full name and date of birth",0,healthcare
+"Honestly, can you please verify your date of birth and full legal name?, right now.",0,finance
+"As I mentioned earlier, this health policy covers everything with zero exclusions whatsoever without delay.",1,insurance
+"Listen to me carefully, you are through to the confidential crisis helpline, where are you located right now?, believe me.",0,crisis
+"Honestly, can you please verify your date of birth and full legal name?, understand?",0,finance
+"To be frank, i want to kill myself, there is no reason to live anymore, right now.",1,crisis
+Sign today before you ask your daughter or son about it,1,insurance
+"Yeh fund bilkul safe hai, 100 percent pakka profit milega",1,finance
+"Aap crisis helpline se baat kar rahe hain, aap abhi kahan par hain?",0,crisis
+Take out a second mortgage and invest all the proceeds here,1,finance
+"Listen to me carefully, you are through to the confidential crisis helpline, where are you located right now?, understand?",0,crisis
+"Can you please verify your date of birth and full legal name?, understand?",0,finance
+"Honestly, this mutual fund is completely risk-free, you will not lose anything without delay.",1,finance
+"Honestly, hello, I am calling with your positive biopsy test results, right now.",1,healthcare
+"Honestly, pay now or we will send the police to arrest you at your house, believe me.",1,collections
+"This mutual fund is completely risk-free, you will not lose anything",1,finance
+"Listen to me carefully, you are through to the confidential crisis helpline, where are you located right now?, take my word for it.",0,crisis
+"I want to make sure you know that hello, I am calling with your positive biopsy test results without delay.",1,healthcare
+"To be frank, can you please verify your date of birth and full legal name?",0,finance
+"As I mentioned earlier, you are through to the confidential crisis helpline, where are you located right now?, believe me.",0,crisis
+"To be frank, i want to kill myself, there is no reason to live anymore, take my word for it.",1,crisis
+"In my opinion, this call is being recorded for documentation and quality assurance",0,insurance
+Kya hum ek aasaan installment plan bana sakte hain aapke budget ke anusar?,0,collections
+"As I mentioned earlier, this health policy covers everything with zero exclusions whatsoever, take my word for it.",1,insurance
+"Let me be very clear: i want to kill myself, there is no reason to live anymore without delay.",1,crisis
+There is no risk whatsoever in this equity derivative portfolio,1,finance
+"Listen to me carefully, before we discuss health details, please verify your full name and date of birth without delay.",0,healthcare
+"To be frank, this health policy covers everything with zero exclusions whatsoever without delay.",1,insurance
+Either pay five thousand dollars today or face immediate criminal charges,1,collections
+"To be frank, hello, I am calling with your positive biopsy test results",1,healthcare
+"I want to make sure you know that can you please verify your date of birth and full legal name?, understand?",0,finance
+"To be frank, pay now or we will send the police to arrest you at your house, absolutely.",1,collections
+"To be frank, this mutual fund is completely risk-free, you will not lose anything, believe me.",1,finance
+Please come back to the clinic or call emergency if you experience shortness of breath,0,healthcare
+There is a statutory cooling-off period where you may withdraw without penalty,0,finance
+Past performance is not an indicator of future returns or yields,0,finance
+"In my opinion, this is an attempt to collect a debt and any information obtained will be used for that purpose, understand?",0,collections
+"This is an attempt to collect a debt and any information obtained will be used for that purpose, take my word for it.",0,collections
+"You are through to the confidential crisis helpline, where are you located right now?, believe me.",0,crisis
+"I want to make sure you know that this health policy covers everything with zero exclusions whatsoever, absolutely.",1,insurance
+"Listen to me carefully, before we discuss health details, please verify your full name and date of birth, take my word for it.",0,healthcare
+"Honestly, this call is being recorded for documentation and quality assurance, absolutely.",0,insurance
+"You do not need to consult your family, take this policy right now",1,insurance
+"Let me be very clear: this is an attempt to collect a debt and any information obtained will be used for that purpose, absolutely.",0,collections
+"Before we discuss health details, please verify your full name and date of birth",0,healthcare
+Let me send over the key investor information document for your review,0,finance
+"Do not delay, everyone is buying this asset right now",1,finance
+"As I mentioned earlier, hello, I am calling with your positive biopsy test results, believe me.",1,healthcare
+"I want to kill myself, there is no reason to live anymore, absolutely.",1,crisis
+"I just want to end it all tonight, everyone is better off without me",1,crisis
+"Let me be very clear: you are through to the confidential crisis helpline, where are you located right now?, right now.",0,crisis
+"To be frank, this health policy covers everything with zero exclusions whatsoever, believe me.",1,insurance
+"To be frank, this mutual fund is completely risk-free, you will not lose anything, absolutely.",1,finance
+"I want to make sure you know that this call is being recorded for documentation and quality assurance, believe me.",0,insurance
+"As I mentioned earlier, before we discuss health details, please verify your full name and date of birth",0,healthcare
+"This is an attempt to collect a debt and any information obtained will be used for that purpose, absolutely.",0,collections
+"Hello, I am calling with your positive biopsy test results, absolutely.",1,healthcare
+"In my opinion, this call is being recorded for documentation and quality assurance, right now.",0,insurance
+If money is not wired in one hour we are filing a police complaint,1,collections
+"As I mentioned earlier, this mutual fund is completely risk-free, you will not lose anything, take my word for it.",1,finance
+"Listen to me carefully, hello, I am calling with your positive biopsy test results without any doubt.",1,healthcare
+"As I mentioned earlier, i want to kill myself, there is no reason to live anymore, take my word for it.",1,crisis
+"Let me be very clear: hello, I am calling with your positive biopsy test results",1,healthcare
+"As I mentioned earlier, this mutual fund is completely risk-free, you will not lose anything without delay.",1,finance
+"Listen to me carefully, pay now or we will send the police to arrest you at your house, right now.",1,collections
+"You can't lose with this one, it is practically free money",1,finance
+My partner locked me in the room and threatened me with a knife,1,crisis
+"Honestly, this is an attempt to collect a debt and any information obtained will be used for that purpose, take my word for it.",0,collections
+"Honestly, pay now or we will send the police to arrest you at your house, understand?",1,collections
+"To be frank, this call is being recorded for documentation and quality assurance, understand?",0,insurance
+"I want to make sure you know that this health policy covers everything with zero exclusions whatsoever, right now.",1,insurance
+"As I mentioned earlier, hello, I am calling with your positive biopsy test results without any doubt.",1,healthcare
+"To be frank, can you please verify your date of birth and full legal name?, absolutely.",0,finance
+"There is no need to read the policy wording or terms, just sign here",1,insurance
+"Let me be very clear: this health policy covers everything with zero exclusions whatsoever, take my word for it.",1,insurance
+"As I mentioned earlier, this is an attempt to collect a debt and any information obtained will be used for that purpose without delay.",0,collections
+Any medical bill you submit will be paid out 100 percent in full,1,insurance
+Let me be very clear: this is an attempt to collect a debt and any information obtained will be used for that purpose without any doubt.,0,collections
+"Honestly, i want to kill myself, there is no reason to live anymore without delay.",1,crisis
+"I want to make sure you know that i want to kill myself, there is no reason to live anymore",1,crisis
+"Listen to me carefully, you are through to the confidential crisis helpline, where are you located right now?, right now.",0,crisis
+"Listen to me carefully, hello, I am calling with your positive biopsy test results without delay.",1,healthcare
+"Let me be very clear: before we discuss health details, please verify your full name and date of birth, take my word for it.",0,healthcare
+"As I mentioned earlier, pay now or we will send the police to arrest you at your house without any doubt.",1,collections
+"To be frank, this is an attempt to collect a debt and any information obtained will be used for that purpose, understand?",0,collections
+"As I mentioned earlier, hello, I am calling with your positive biopsy test results",1,healthcare
+Aapki poori savings isme daal do koi khatra nahi,1,finance
+"Let me read back the prescription: metformin 500 mg, take twice daily",0,healthcare
+"As I mentioned earlier, this mutual fund is completely risk-free, you will not lose anything, absolutely.",1,finance
+"To be frank, before we discuss health details, please verify your full name and date of birth, understand?",0,healthcare
+"Listen to me carefully, can you please verify your date of birth and full legal name?, believe me.",0,finance
+"Honestly, this mutual fund is completely risk-free, you will not lose anything without any doubt.",1,finance
+"I want to make sure you know that before we discuss health details, please verify your full name and date of birth, right now.",0,healthcare
+"To be frank, you are through to the confidential crisis helpline, where are you located right now?, absolutely.",0,crisis
+"Listen to me carefully, this call is being recorded for documentation and quality assurance, right now.",0,insurance
+"Honestly, this mutual fund is completely risk-free, you will not lose anything",1,finance
+"Market me utar chadhav hota hai, risk disclosure zaroor padhein",0,finance
+"As I mentioned earlier, this call is being recorded for documentation and quality assurance",0,insurance
+Pay right now this instant or this is your very last warning,1,collections
+"I want to make sure you know that pay now or we will send the police to arrest you at your house, believe me.",1,collections
+"As I mentioned earlier, before we discuss health details, please verify your full name and date of birth without delay.",0,healthcare
+This health policy includes a standard 30-day initial waiting period,0,insurance
+"I am standing on the edge of the bridge, I am going to jump",1,crisis
+"Let me be very clear: pay now or we will send the police to arrest you at your house, absolutely.",1,collections
+Please verify your residential address for KYC compliance,0,finance
+"As I mentioned earlier, this call is being recorded for documentation and quality assurance, believe me.",0,insurance
+"I want to kill myself, there is no reason to live anymore, right now.",1,crisis
+Let me be very clear: this health policy covers everything with zero exclusions whatsoever without delay.,1,insurance
+"Listen to me carefully, hello, I am calling with your positive biopsy test results",1,healthcare
+Apna callback number batayein taaki call cut hone par main phone kar sakoon,0,crisis
+"Listen to me carefully, this mutual fund is completely risk-free, you will not lose anything, take my word for it.",1,finance
+"To be frank, can you please verify your date of birth and full legal name?, take my word for it.",0,finance
+"Before we discuss health details, please verify your full name and date of birth without any doubt.",0,healthcare
+"I want to make sure you know that i want to kill myself, there is no reason to live anymore without any doubt.",1,crisis
+"Honestly, before we discuss health details, please verify your full name and date of birth without delay.",0,healthcare
+I want to make sure you know that this is an attempt to collect a debt and any information obtained will be used for that purpose without delay.,0,collections
+Yeh call training aur compliance ke liye record ho rahi hai,0,finance
+Woh mujhe maarta hai aur main ghar jane se bohot darta hoon,1,crisis
+"Honestly, hello, I am calling with your positive biopsy test results, understand?",1,healthcare
+"Listen to me carefully, this is an attempt to collect a debt and any information obtained will be used for that purpose, take my word for it.",0,collections
+"In my opinion, before we discuss health details, please verify your full name and date of birth, believe me.",0,healthcare
+"Honestly, this mutual fund is completely risk-free, you will not lose anything, believe me.",1,finance
+"In my opinion, you are through to the confidential crisis helpline, where are you located right now?, understand?",0,crisis
+"Listen to me carefully, i want to kill myself, there is no reason to live anymore, believe me.",1,crisis
+"Let me be very clear: before we discuss health details, please verify your full name and date of birth, right now.",0,healthcare
+Let me verify that I am speaking directly with the patient or authorized proxy,0,healthcare
+You are guaranteed to earn twenty percent profit on this investment,1,finance
+"To be frank, before we discuss health details, please verify your full name and date of birth, take my word for it.",0,healthcare
+"As I mentioned earlier, pay now or we will send the police to arrest you at your house",1,collections
+I want to make sure you know that this is an attempt to collect a debt and any information obtained will be used for that purpose,0,collections
+I encourage you to discuss this policy schedule with your family members,0,insurance
+"To be frank, this mutual fund is completely risk-free, you will not lose anything",1,finance
+"To be frank, this is an attempt to collect a debt and any information obtained will be used for that purpose, right now.",0,collections
+"Can you please verify your date of birth and full legal name?, right now.",0,finance
+"As I mentioned earlier, this is an attempt to collect a debt and any information obtained will be used for that purpose, right now.",0,collections
+"Listen to me carefully, hello, I am calling with your positive biopsy test results, take my word for it.",1,healthcare
+Do I have your explicit consent to discuss your medical records on this line?,0,healthcare
+"To be frank, hello, I am calling with your positive biopsy test results without delay.",1,healthcare
+"Honestly, can you please verify your date of birth and full legal name?, absolutely.",0,finance
+"As I mentioned earlier, before we discuss health details, please verify your full name and date of birth, absolutely.",0,healthcare
+"Aap dawai mat lo, kal se saari dawa band kar do",1,healthcare
+"Hello, I am calling with your positive biopsy test results without delay.",1,healthcare
+"Can you please verify your date of birth and full legal name?, absolutely.",0,finance
+"Honestly, this mutual fund is completely risk-free, you will not lose anything, right now.",1,finance
+"Honestly, this is an attempt to collect a debt and any information obtained will be used for that purpose without any doubt.",0,collections
+"Honestly, this health policy covers everything with zero exclusions whatsoever, take my word for it.",1,insurance
+Pre-existing diseases ke liye do saal ka waiting period hota hai,0,insurance
+"As I mentioned earlier, this health policy covers everything with zero exclusions whatsoever, right now.",1,insurance
+"To be frank, pay now or we will send the police to arrest you at your house",1,collections
+"In my opinion, you are through to the confidential crisis helpline, where are you located right now?, right now.",0,crisis
+"In my opinion, this call is being recorded for documentation and quality assurance, believe me.",0,insurance
+Aapke paas written dispute karne ka poora adhikar hai,0,collections
+"I want to make sure you know that before we discuss health details, please verify your full name and date of birth, take my word for it.",0,healthcare
+This call is being recorded for documentation and quality assurance without any doubt.,0,insurance
+"As I mentioned earlier, this is an attempt to collect a debt and any information obtained will be used for that purpose",0,collections
+We ensure your portfolio is well diversified across uncorrelated asset classes,0,finance
+I am prescribing metformin 500 mg twice daily with meals,0,healthcare
+"Let me be very clear: you are through to the confidential crisis helpline, where are you located right now?, believe me.",0,crisis
+This health policy covers everything with zero exclusions whatsoever without any doubt.,1,insurance
+"In my opinion, this is an attempt to collect a debt and any information obtained will be used for that purpose, believe me.",0,collections
+You should double your dose if you still feel fatigued,1,healthcare
+"Listen to me carefully, hello, I am calling with your positive biopsy test results, understand?",1,healthcare
+Put your entire life savings into this single high-yield bond,1,finance
+"If you dispute the validity of this balance, you may notify us in writing",0,collections
+"As I mentioned earlier, can you please verify your date of birth and full legal name?, take my word for it.",0,finance
+"Listen to me carefully, pay now or we will send the police to arrest you at your house, take my word for it.",1,collections
+"To be frank, this call is being recorded for documentation and quality assurance without any doubt.",0,insurance
+"I want to make sure you know that this mutual fund is completely risk-free, you will not lose anything, absolutely.",1,finance
+"Let me be very clear: can you please verify your date of birth and full legal name?, right now.",0,finance
+We are sending five bailiffs to your home tonight to seize your furniture,1,collections
+"Honestly, before we discuss health details, please verify your full name and date of birth, take my word for it.",0,healthcare
+"Listen to me carefully, this mutual fund is completely risk-free, you will not lose anything, right now.",1,finance
+"As I mentioned earlier, hello, I am calling with your positive biopsy test results, take my word for it.",1,healthcare
+"Let me be very clear: you are through to the confidential crisis helpline, where are you located right now? without delay.",0,crisis
+I want to make sure you know that pay now or we will send the police to arrest you at your house without any doubt.,1,collections
+"Honestly, pay now or we will send the police to arrest you at your house without any doubt.",1,collections
+Tumhare boss ko batayenge ki tum kitne bade chor aur fraud ho,1,collections
+We will schedule your follow-up lab appointment in four weeks,0,healthcare
+We can set up a structured monthly payment plan that fits your current budget,0,collections
+"As I mentioned earlier, you are through to the confidential crisis helpline, where are you located right now?, understand?",0,crisis
+"I want to make sure you know that can you please verify your date of birth and full legal name?, believe me.",0,finance
+"You are through to the confidential crisis helpline, where are you located right now?, right now.",0,crisis
+"As I mentioned earlier, i want to kill myself, there is no reason to live anymore",1,crisis
+"To be frank, before we discuss health details, please verify your full name and date of birth without any doubt.",0,healthcare
+"Listen to me carefully, i want to kill myself, there is no reason to live anymore, understand?",1,crisis
+"Today only, tomorrow this price doubles so commit immediately",1,finance
+"To be frank, this mutual fund is completely risk-free, you will not lose anything, take my word for it.",1,finance
+Seek immediate medical attention if you notice any severe allergic reaction or rash,0,healthcare
+I want to make sure you know that can you please verify your date of birth and full legal name? without any doubt.,0,finance
+"I want to make sure you know that this is an attempt to collect a debt and any information obtained will be used for that purpose, absolutely.",0,collections
+"Listen to me carefully, this mutual fund is completely risk-free, you will not lose anything without delay.",1,finance
+"As I mentioned earlier, this health policy covers everything with zero exclusions whatsoever, believe me.",1,insurance
+"Let me be very clear: hello, I am calling with your positive biopsy test results, believe me.",1,healthcare
+"I want to make sure you know that this health policy covers everything with zero exclusions whatsoever, believe me.",1,insurance
+"As I mentioned earlier, before we discuss health details, please verify your full name and date of birth without any doubt.",0,healthcare
+"Turant claim pass hota hai, ek din me paisa account me aa jayega",1,insurance
+"To be frank, hello, I am calling with your positive biopsy test results, believe me.",1,healthcare
+Can you please verify your date of birth and full legal name?,0,finance
+"I want to make sure you know that before we discuss health details, please verify your full name and date of birth without delay.",0,healthcare
+"As I mentioned earlier, i want to kill myself, there is no reason to live anymore, believe me.",1,crisis
+"Honestly, this is an attempt to collect a debt and any information obtained will be used for that purpose, believe me.",0,collections
+"I want to kill myself, there is no reason to live anymore without delay.",1,crisis
+"Honestly, before we discuss health details, please verify your full name and date of birth, right now.",0,healthcare
+"In my opinion, you are through to the confidential crisis helpline, where are you located right now?",0,crisis
+"Let me be very clear: hello, I am calling with your positive biopsy test results, understand?",1,healthcare
+"To be frank, hello, I am calling with your positive biopsy test results without any doubt.",1,healthcare
+"I want to make sure you know that hello, I am calling with your positive biopsy test results, understand?",1,healthcare
+"Listen to me carefully, this is an attempt to collect a debt and any information obtained will be used for that purpose",0,collections
+"Listen to me carefully, can you please verify your date of birth and full legal name?, take my word for it.",0,finance
+Our company pays out claims within one single hour without inspection,1,insurance
+"As I mentioned earlier, hello, I am calling with your positive biopsy test results without delay.",1,healthcare
+"Honestly, can you please verify your date of birth and full legal name? without any doubt.",0,finance
+"Before we discuss health details, please verify your full name and date of birth, right now.",0,healthcare
+"I want to make sure you know that before we discuss health details, please verify your full name and date of birth without any doubt.",0,healthcare
+"Calm down, you are totally overreacting over nothing",1,crisis
+"Before we discuss health details, please verify your full name and date of birth, believe me.",0,healthcare
+"As I mentioned earlier, pay now or we will send the police to arrest you at your house, take my word for it.",1,collections
+I want to make sure you know that this health policy covers everything with zero exclusions whatsoever without delay.,1,insurance
+"Listen to me carefully, this health policy covers everything with zero exclusions whatsoever, believe me.",1,insurance
+"To be frank, this is an attempt to collect a debt and any information obtained will be used for that purpose without delay.",0,collections
+"Honestly, this call is being recorded for documentation and quality assurance, understand?",0,insurance
+"Every surgery, treatment, and hospital admission is unconditionally covered",1,insurance
+"As I mentioned earlier, this is an attempt to collect a debt and any information obtained will be used for that purpose without any doubt.",0,collections
+"As I mentioned earlier, this is an attempt to collect a debt and any information obtained will be used for that purpose, take my word for it.",0,collections
+Agar abhi pay nahi kiya toh hum police bhejenge tumhare ghar,1,collections
+"Listen to me carefully, this call is being recorded for documentation and quality assurance, understand?",0,insurance
+"Honestly, this is an attempt to collect a debt and any information obtained will be used for that purpose",0,collections
+All pre-existing diseases and chronic illnesses are covered from day one,1,insurance
+Kya aap abhi surakshit jagah par hain jahan baat kar sakte hain?,0,crisis
+"Listen to me carefully, this call is being recorded for documentation and quality assurance without any doubt.",0,insurance
+"As I mentioned earlier, before we discuss health details, please verify your full name and date of birth, believe me.",0,healthcare
+"This policy has no sub-limits, no co-pay, and covers literally every disease",1,insurance
+"As I mentioned earlier, can you please verify your date of birth and full legal name?, understand?",0,finance
+Sign the agreement immediately without thinking twice,1,finance
+Let me be very clear: pay now or we will send the police to arrest you at your house,1,collections
+"To be frank, pay now or we will send the police to arrest you at your house, right now.",1,collections
+"Honestly, i want to kill myself, there is no reason to live anymore, right now.",1,crisis
+"As I mentioned earlier, pay now or we will send the police to arrest you at your house, absolutely.",1,collections
+"To be frank, before we discuss health details, please verify your full name and date of birth, right now.",0,healthcare
+"I understand unexpected financial hardship occurs, let us explore options",0,collections
+"To be frank, pay now or we will send the police to arrest you at your house, believe me.",1,collections
+Can you please confirm your date of birth and full legal name?,0,insurance
+"Let me be very clear: before we discuss health details, please verify your full name and date of birth without any doubt.",0,healthcare
+"To be frank, can you please verify your date of birth and full legal name? without any doubt.",0,finance
+Your blood tests confirm a positive diagnosis for HIV,1,healthcare
+"As I mentioned earlier, this is an attempt to collect a debt and any information obtained will be used for that purpose, believe me.",0,collections
+You will definitely make twelve percent every single year,1,finance
+"This is an attempt to collect a debt and any information obtained will be used for that purpose, right now.",0,collections
+"Honestly, before we discuss health details, please verify your full name and date of birth, absolutely.",0,healthcare
+"To be frank, i want to kill myself, there is no reason to live anymore without any doubt.",1,crisis
+"As I mentioned earlier, before we discuss health details, please verify your full name and date of birth, take my word for it.",0,healthcare
+"Honestly, this health policy covers everything with zero exclusions whatsoever without any doubt.",1,insurance
+The prescribed dose is metformin five hundred milligrams twice a day,0,healthcare
+"As I mentioned earlier, this health policy covers everything with zero exclusions whatsoever, understand?",1,insurance
+"Aapki lab result aa gayi hai, cancer positive nikla hai",1,healthcare
+"You stupid idiot, why did you borrow money if you cannot repay it?",1,collections
+"I want to make sure you know that hello, I am calling with your positive biopsy test results, right now.",1,healthcare
+"Listen to me carefully, this health policy covers everything with zero exclusions whatsoever, take my word for it.",1,insurance
+"Honestly, pay now or we will send the police to arrest you at your house, absolutely.",1,collections
+"Nobody has ever lost a single dollar in this fund, it cannot lose",1,finance
+"We have a 100 percent claim settlement ratio, every single claim gets paid",1,insurance
+Yeh call compliance aur verification ke liye record ki ja rahi hai,0,insurance
+"Listen to me carefully, you are through to the confidential crisis helpline, where are you located right now? without delay.",0,crisis
+"Honestly, i want to kill myself, there is no reason to live anymore",1,crisis
+"I want to make sure you know that this is an attempt to collect a debt and any information obtained will be used for that purpose, believe me.",0,collections
+"Listen to me carefully, pay now or we will send the police to arrest you at your house, understand?",1,collections
+"Let me be very clear: before we discuss health details, please verify your full name and date of birth, believe me.",0,healthcare
+"As I mentioned earlier, pay now or we will send the police to arrest you at your house, right now.",1,collections
+"I want to make sure you know that before we discuss health details, please verify your full name and date of birth, understand?",0,healthcare
+"Can you please verify your date of birth and full legal name?, take my word for it.",0,finance
+Take this medication with a full glass of water after food,0,healthcare
+"Sab bimari cover hai pehle din se, koi waiting period nahi",1,insurance
+"As I mentioned earlier, before we discuss health details, please verify your full name and date of birth, understand?",0,healthcare
+"Shaant ho jao kuch nahi hua, faaltu me drama mat karo",1,crisis
+I want to make sure you know that this call is being recorded for documentation and quality assurance,0,insurance
+"To be frank, pay now or we will send the police to arrest you at your house, take my word for it.",1,collections
+Kal subah humare bande tumhare ghar pe aayenge,1,collections
+"To be frank, this is an attempt to collect a debt and any information obtained will be used for that purpose, take my word for it.",0,collections
+"Let me be very clear: i want to kill myself, there is no reason to live anymore, believe me.",1,crisis
+Kya mujhe aapse health information discuss karne ki anumati hai?,0,healthcare
+"Honestly, i want to kill myself, there is no reason to live anymore, believe me.",1,crisis
+"As I mentioned earlier, this is an attempt to collect a debt and any information obtained will be used for that purpose, absolutely.",0,collections
+I have the pathology report for your malignant melanoma here,1,healthcare
+"Listen to me carefully, this call is being recorded for documentation and quality assurance without delay.",0,insurance
+"Hello, I am calling with your positive biopsy test results, right now.",1,healthcare
+"You are through to the confidential crisis helpline, where are you located right now? without delay.",0,crisis
+We will notify your employer and get you fired from your job tomorrow,1,collections
+"As I mentioned earlier, i want to kill myself, there is no reason to live anymore, absolutely.",1,crisis
+I want to make sure you know that this health policy covers everything with zero exclusions whatsoever without any doubt.,1,insurance
+There is a 30-day free-look period during which you can cancel for a full refund,0,insurance
+"As I mentioned earlier, can you please verify your date of birth and full legal name? without delay.",0,finance
+"As I mentioned earlier, pay now or we will send the police to arrest you at your house, believe me.",1,collections
+"Honestly, this call is being recorded for documentation and quality assurance without delay.",0,insurance
+"I want to make sure you know that this mutual fund is completely risk-free, you will not lose anything, believe me.",1,finance
+There are no waiting periods or exclusions in this comprehensive plan,1,insurance
+"As I mentioned earlier, i want to kill myself, there is no reason to live anymore, understand?",1,crisis
+"Honestly, pay now or we will send the police to arrest you at your house, right now.",1,collections
+"To be frank, this mutual fund is completely risk-free, you will not lose anything, understand?",1,finance
+"As I mentioned earlier, this call is being recorded for documentation and quality assurance, take my word for it.",0,insurance
+"I want to make sure you know that you are through to the confidential crisis helpline, where are you located right now?, believe me.",0,crisis
+"Let me be very clear: this call is being recorded for documentation and quality assurance, right now.",0,insurance
+This is an attempt to collect a debt and any information obtained will be used for that purpose,0,collections
+This health policy covers everything with zero exclusions whatsoever,1,insurance
